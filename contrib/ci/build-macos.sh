@@ -40,13 +40,22 @@ APP="$DIST/NetCoin.app"
 cp "$ROOT/src/netcoind" "$APP/Contents/MacOS/"
 # copy Qt and all Homebrew libraries into the bundle and point the binaries at them
 "$QT5/bin/macdeployqt" "$APP" -executable="$APP/Contents/MacOS/netcoind" -always-overwrite
+# the "offscreen" platform plugin (for the automatic start test below and for
+# running without a display); its Qt references must point into the bundle
+mkdir -p "$APP/Contents/PlugIns/platforms"
+OFFSCREEN="$APP/Contents/PlugIns/platforms/libqoffscreen.dylib"
+cp -L "$QT5/plugins/platforms/libqoffscreen.dylib" "$OFFSCREEN"; chmod u+w "$OFFSCREEN"
+for dep in $(otool -L "$OFFSCREEN" | awk 'NR>1{print $1}' | grep '\.framework/' || true); do
+    fwpath="${dep#@rpath/}"; fwpath="${fwpath##*/lib/}"
+    install_name_tool -change "$dep" "@executable_path/../Frameworks/$fwpath" "$OFFSCREEN" 2>/dev/null
+done
 # macdeployqt misses libraries that the bundled ones load via @loader_path or
 # @rpath (e.g. boost_filesystem -> boost_atomic): copy those until complete
 BREWLIB="$(brew --prefix)/lib"
 FW="$APP/Contents/Frameworks"
 for pass in 1 2 3 4 5; do
     added=0
-    for f in "$FW"/*.dylib "$APP/Contents/MacOS/"*; do
+    for f in "$FW"/*.dylib "$APP/Contents/MacOS/"* "$APP/Contents/PlugIns"/*/*.dylib; do
         for dep in $(otool -L "$f" | awk 'NR>1{print $1}' | grep -E '^(@loader_path|@rpath|/opt/homebrew|/usr/local)/' | grep -v '\.framework/' || true); do
             name="$(basename "$dep")"
             if [ ! -f "$FW/$name" ]; then
@@ -94,7 +103,7 @@ done
 "$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" stop
 sleep 5
 mkdir -p "$SMOKE/gui"
-QT_QPA_PLATFORM=offscreen QT_QPA_PLATFORM_PLUGIN_PATH="$QT5/plugins/platforms" "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
+QT_QPA_PLATFORM=offscreen "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
 GUIPID=$!
 sleep 30
 kill -0 "$GUIPID"          # still running after 30 s
