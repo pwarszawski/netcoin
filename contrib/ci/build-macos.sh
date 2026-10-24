@@ -40,8 +40,32 @@ APP="$DIST/NetCoin.app"
 cp "$ROOT/src/netcoind" "$APP/Contents/MacOS/"
 # copy Qt and all Homebrew libraries into the bundle and point the binaries at them
 "$QT5/bin/macdeployqt" "$APP" -executable="$APP/Contents/MacOS/netcoind" -always-overwrite
+# macdeployqt misses libraries that the bundled ones load via @loader_path or
+# @rpath (e.g. boost_filesystem -> boost_atomic): copy those until complete
+BREWLIB="$(brew --prefix)/lib"
+FW="$APP/Contents/Frameworks"
+for pass in 1 2 3 4 5; do
+    added=0
+    for f in "$FW"/*.dylib "$APP/Contents/MacOS/"*; do
+        for dep in $(otool -L "$f" | awk 'NR>1{print $1}' | grep -E '^(@loader_path|@rpath|/opt/homebrew|/usr/local)/' | grep -v '\.framework/' || true); do
+            name="$(basename "$dep")"
+            if [ ! -f "$FW/$name" ]; then
+                src="$BREWLIB/$name"
+                [ -f "$src" ] || src="$(find "$(brew --prefix)/opt" -name "$name" -print -quit)"
+                cp -L "$src" "$FW/$name"; chmod u+w "$FW/$name"
+                install_name_tool -id "@executable_path/../Frameworks/$name" "$FW/$name"
+                added=1
+            fi
+            case "$f" in
+                "$FW"/*) install_name_tool -change "$dep" "@loader_path/$name" "$f" ;;
+                *)       install_name_tool -change "$dep" "@executable_path/../Frameworks/$name" "$f" ;;
+            esac
+        done
+    done
+    [ "$added" = 0 ] && break
+done
 # nothing may still refer to Homebrew
-if otool -L "$APP/Contents/MacOS/"* "$APP/Contents/Frameworks/"*.dylib | grep -E '/(opt|usr/local)/'; then
+if otool -L "$APP/Contents/MacOS/"* "$FW/"*.dylib | grep -E '^[[:space:]]*/(opt|usr/local)/'; then
     echo "error: the bundle still links to Homebrew libraries"; false
 fi
 # macdeployqt invalidates the signatures; Apple Silicon needs at least an ad-hoc one
