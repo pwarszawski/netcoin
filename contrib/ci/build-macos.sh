@@ -71,7 +71,7 @@ fi
 # macdeployqt invalidates the signatures; Apple Silicon needs at least an ad-hoc one
 codesign --force --deep --sign - "$APP"
 codesign --verify --deep --strict "$APP"
-"$APP/Contents/MacOS/netcoind" -? | head -3
+"$APP/Contents/MacOS/netcoind" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt"; rm -f "$ROOT/dist/help.txt"
 
 # smoke test of the bundled binaries (nobody tests the Mac build by hand):
 # the node starts, answers RPC and stops cleanly; the wallet window starts

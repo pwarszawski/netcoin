@@ -2,12 +2,15 @@
 # Builds netcoind.exe and netcoin.exe (Qt wallet) in an MSYS2 UCRT64 shell
 # and collects everything needed to run them into dist/netcoin-<ver>-win64/.
 # Used by the GitHub workflows; can also be run by hand in MSYS2.
+# By default everything is linked statically (two self-contained .exe files);
+# STATIC=0 builds against the DLLs and ships them next to the programs.
 set -euo pipefail
 
 VERSION="${1:-dev}"
 JOBS="$(nproc)"
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 P="${MINGW_PACKAGE_PREFIX:-mingw-w64-ucrt-x86_64}"
+STATIC="${STATIC:-1}"
 LOG="$ROOT/build-windows.log"
 : > "$LOG"
 
@@ -26,6 +29,7 @@ trap fail ERR
 
 log "installing packages"
 REQUIRED="toolchain boost openssl sqlite3 leveldb miniupnpc zlib qt5-base qt5-tools"
+[ "$STATIC" = 1 ] && REQUIRED="$REQUIRED qt5-static"
 OPTIONAL="db qrencode libqrencode"
 # the MSYS2 mirrors are sometimes slow; retry
 for attempt in 1 2 3 4; do
@@ -43,14 +47,27 @@ for p in $OPTIONAL; do
         case $p in db) HAVE_BDB=1;; *qrencode) HAVE_QR=1;; esac
     fi
 done
-log "Berkeley DB (wallet conversion): $HAVE_BDB, QR codes: $HAVE_QR"
+log "Berkeley DB (wallet conversion): $HAVE_BDB, QR codes: $HAVE_QR, static: $STATIC"
+
+# a static LevelDB needs the libraries it was built with
+LEVELDB_EXTRA_LIBS=""
+if [ "$STATIC" = 1 ]; then
+    for l in snappy crc32c; do
+        [ -f "$MINGW_PREFIX/lib/lib$l.a" ] && LEVELDB_EXTRA_LIBS="$LEVELDB_EXTRA_LIBS -l$l"
+    done
+    for l in boost_filesystem-mt boost_thread-mt ssl crypto sqlite3 leveldb miniupnpc z; do
+        [ -f "$MINGW_PREFIX/lib/lib$l.a" ] || { echo "static library lib$l.a missing" | tee -a "$LOG"; false; }
+    done
+    log "extra libraries for LevelDB:${LEVELDB_EXTRA_LIBS:- none}"
+fi
+MAKEARGS=(USE_BDB=$HAVE_BDB STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS")
 
 log "building netcoind.exe"
 cd "$ROOT/src"
-make -f makefile.mingw -j"$JOBS" USE_BDB=$HAVE_BDB netcoind.exe >>"$LOG" 2>&1
+make -f makefile.mingw -j"$JOBS" "${MAKEARGS[@]}" netcoind.exe >>"$LOG" 2>&1
 
 log "building and running unit tests"
-make -f makefile.mingw -j"$JOBS" USE_BDB=$HAVE_BDB test_netcoin.exe >>"$LOG" 2>&1
+make -f makefile.mingw -j"$JOBS" "${MAKEARGS[@]}" test_netcoin.exe >>"$LOG" 2>&1
 ./test_netcoin.exe >>"$LOG" 2>&1
 
 log "building netcoin.exe (Qt wallet)"
@@ -63,7 +80,13 @@ findtool() {
     done
     return 1
 }
-QMAKE="$(findtool qmake-qt5 qmake)" || { echo "qmake not found" >>"$LOG"; ls "$MINGW_PREFIX/bin" | grep -i -E "qmake|deployqt" >>"$LOG"; false; }
+if [ "$STATIC" = 1 ]; then
+    QMAKE="$MINGW_PREFIX/qt5-static/bin/qmake"
+    [ -x "$QMAKE" ] || QMAKE="$(find "$MINGW_PREFIX/qt5-static" -name 'qmake*.exe' -print -quit)"
+else
+    QMAKE="$(findtool qmake-qt5 qmake)"
+fi
+[ -n "$QMAKE" ] && [ -x "$QMAKE" ] || { echo "qmake not found" >>"$LOG"; ls "$MINGW_PREFIX/bin" | grep -i -E "qmake|deployqt" >>"$LOG"; false; }
 WINDEPLOYQT="$(findtool windeployqt-qt5 windeployqt)" || WINDEPLOYQT=""
 LRELEASE="$(findtool lrelease-qt5 lrelease)" || { echo "lrelease not found" >>"$LOG"; false; }
 log "qmake: $QMAKE  lrelease: $LRELEASE  windeployqt: ${WINDEPLOYQT:-none}"
@@ -72,7 +95,8 @@ cd "$ROOT/build-qt"
 QRARG="USE_QRCODE=$HAVE_QR"
 BDBARG=""
 [ "$HAVE_BDB" = 1 ] || BDBARG="USE_BDB=0"
-"$QMAKE" ../netcoin-qt.pro MSYS2=1 "QMAKE_LRELEASE=$(cygpath -m "$LRELEASE")" USE_UPNP=1 $QRARG $BDBARG CONFIG+=release >>"$LOG" 2>&1
+"$QMAKE" ../netcoin-qt.pro MSYS2=1 STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS" \
+    "QMAKE_LRELEASE=$(cygpath -m "$LRELEASE")" USE_UPNP=1 $QRARG $BDBARG CONFIG+=release >>"$LOG" 2>&1
 make -j"$JOBS" >>"$LOG" 2>&1
 
 log "collecting files"
@@ -83,28 +107,37 @@ cp "$ROOT/src/netcoind.exe" "$DIST/"
 QTEXE="$(ls release/netcoin.exe 2>/dev/null || ls netcoin.exe)"
 cp "$QTEXE" "$DIST/netcoin.exe"
 strip "$DIST/netcoind.exe" "$DIST/netcoin.exe"
-[ -n "$WINDEPLOYQT" ] && "$WINDEPLOYQT" --release --no-translations --no-system-d3d-compiler --no-opengl-sw \
-    --no-compiler-runtime "$DIST/netcoin.exe" >>"$LOG" 2>&1 || true
-# the Qt platform plugin is required for the wallet window to open
-if [ ! -f "$DIST/platforms/qwindows.dll" ]; then
-    for d in "$MINGW_PREFIX/share/qt5/plugins" "$MINGW_PREFIX/lib/qt5/plugins"; do
-        if [ -f "$d/platforms/qwindows.dll" ]; then
-            mkdir -p "$DIST/platforms" "$DIST/styles"
-            cp "$d/platforms/qwindows.dll" "$DIST/platforms/"
-            cp "$d"/styles/*.dll "$DIST/styles/" 2>/dev/null || true
-            break
+if [ "$STATIC" = 1 ]; then
+    # self-contained: nothing from the MSYS2 prefix may be needed at run time
+    for f in "$DIST"/*.exe; do
+        if ldd "$f" | grep -i "${MINGW_PREFIX:-/ucrt64}/"; then
+            echo "$f still needs DLLs from MSYS2" | tee -a "$LOG"; false
         fi
     done
-fi
-[ -f "$DIST/platforms/qwindows.dll" ] || { echo "qwindows.dll not found" >>"$LOG"; false; }
-# all DLLs from the MSYS2 prefix that the programs (and Qt plugins) need
-for i in 1 2 3; do
-    find "$DIST" -name '*.exe' -o -name '*.dll' | while read -r f; do
-        ldd "$f" 2>/dev/null | awk '{print $3}' | grep -i "^${MINGW_PREFIX:-/ucrt64}/" || true
-    done | sort -u | while read -r dll; do
-        [ -f "$DIST/$(basename "$dll")" ] || cp "$dll" "$DIST/"
+else
+    [ -n "$WINDEPLOYQT" ] && "$WINDEPLOYQT" --release --no-translations --no-system-d3d-compiler --no-opengl-sw \
+        --no-compiler-runtime "$DIST/netcoin.exe" >>"$LOG" 2>&1 || true
+    # the Qt platform plugin is required for the wallet window to open
+    if [ ! -f "$DIST/platforms/qwindows.dll" ]; then
+        for d in "$MINGW_PREFIX/share/qt5/plugins" "$MINGW_PREFIX/lib/qt5/plugins"; do
+            if [ -f "$d/platforms/qwindows.dll" ]; then
+                mkdir -p "$DIST/platforms" "$DIST/styles"
+                cp "$d/platforms/qwindows.dll" "$DIST/platforms/"
+                cp "$d"/styles/*.dll "$DIST/styles/" 2>/dev/null || true
+                break
+            fi
+        done
+    fi
+    [ -f "$DIST/platforms/qwindows.dll" ] || { echo "qwindows.dll not found" >>"$LOG"; false; }
+    # all DLLs from the MSYS2 prefix that the programs (and Qt plugins) need
+    for i in 1 2 3; do
+        find "$DIST" -name '*.exe' -o -name '*.dll' | while read -r f; do
+            ldd "$f" 2>/dev/null | awk '{print $3}' | grep -i "^${MINGW_PREFIX:-/ucrt64}/" || true
+        done | sort -u | while read -r dll; do
+            [ -f "$DIST/$(basename "$dll")" ] || cp "$dll" "$DIST/"
+        done
     done
-done
+fi
 cp "$ROOT/COPYING" "$DIST/COPYING.txt"
 cp "$ROOT/contrib/ci/README-windows.txt" "$DIST/README.txt"
 cd "$ROOT/dist"
@@ -114,5 +147,6 @@ if command -v zip >/dev/null; then
 else
     powershell -NoProfile -Command "Compress-Archive -Path 'netcoin-$VERSION-win64' -DestinationPath 'netcoin-$VERSION-win64.zip'"
 fi
-ls -la "$ROOT/dist" | tee -a "$LOG"
+ls -la "$DIST" "$ROOT/dist" | tee -a "$LOG"
+"$DIST/netcoind.exe" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt" | tee -a "$LOG"; rm -f "$ROOT/dist/help.txt"
 trap - ERR

@@ -4,7 +4,8 @@ NetCoin for Windows (64-bit)
 netcoin.exe   - the graphical wallet
 netcoind.exe  - the headless node / RPC server (command line)
 
-Keep all files of this folder together; the .dll files are required.
+Both programs are self-contained; no other files are needed. Put them in
+any folder (not in the data directory below).
 
 First start: "Windows protected your PC"
 ----------------------------------------
