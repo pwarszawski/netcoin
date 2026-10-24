@@ -60,13 +60,14 @@ if [ "$STATIC" = 1 ]; then
     done
     log "extra libraries for LevelDB:${LEVELDB_EXTRA_LIBS:- none}"
     # Berkeley DB: libdb_cxx.a is only an import library; use the real
-    # static archive (an import library contains __imp_ symbols)
+    # static archive
     BDB_LIB_SUFFIX=""
     if [ "$HAVE_BDB" = 1 ]; then
         BDB_LIB_SUFFIX="none"
         for suffix in "" "-6.2"; do
             a="$MINGW_PREFIX/lib/libdb_cxx$suffix.a"
-            if [ -f "$a" ] && ! nm "$a" 2>/dev/null | grep -q "__imp_"; then BDB_LIB_SUFFIX="$suffix"; break; fi
+            # import libraries define _head_<dll> symbols, static archives do not
+            if [ -f "$a" ] && ! nm "$a" 2>/dev/null | grep -q "_head_"; then BDB_LIB_SUFFIX="$suffix"; break; fi
         done
         ls -la "$MINGW_PREFIX"/lib/libdb_cxx* >>"$LOG" 2>&1 || true
         [ "$BDB_LIB_SUFFIX" != none ] || { echo "no static Berkeley DB library" | tee -a "$LOG"; false; }
