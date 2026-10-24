@@ -71,8 +71,13 @@ if otool -L "$APP/Contents/MacOS/"* "$FW/"*.dylib | grep -E '^[[:space:]]*/(opt|
 fi
 # macdeployqt invalidates the signatures; Apple Silicon needs at least an ad-hoc one
 echo "== signing"
-codesign --force --deep --sign - "$APP"
-codesign --verify --deep --strict "$APP"
+# sign from the inside out (--deep does not cover extra executables such as
+# netcoind in Contents/MacOS)
+find "$APP/Contents/Frameworks" "$APP/Contents/PlugIns" -name '*.dylib' -type f -exec codesign --force --sign - {} \;
+for fw in "$APP/Contents/Frameworks"/*.framework; do [ -d "$fw" ] && codesign --force --sign - "$fw"; done
+codesign --force --sign - "$APP/Contents/MacOS/netcoind"
+codesign --force --sign - "$APP"
+codesign --verify --deep --strict --verbose=2 "$APP"
 "$APP/Contents/MacOS/netcoind" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt"; rm -f "$ROOT/dist/help.txt"
 
 echo "== smoke test"
