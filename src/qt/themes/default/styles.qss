@@ -748,3 +748,9 @@ QBalloonTip QPushButton:hover {
 	border: none;  
 	background-color: $accent-color;
 }
+/* Chart on the overview page */
+QFrame#diffplotframe {
+	background-color: transparent;
+	border: none;
+	border-radius: 4px;
+}

@@ -745,3 +745,10 @@ QGroupBox::title {
 	background-color: rgba(0,0,0,110);
 	border-radius: 3px;
 }
+
+/* Chart on the overview page */
+QFrame#diffplotframe {
+	background-color: rgba(0,0,0,110);
+	border: 1px solid rgba(255,255,255,40);
+	border-radius: 4px;
+}
