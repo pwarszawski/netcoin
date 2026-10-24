@@ -1065,7 +1065,7 @@ void BitcoinGUI::importSnapshot()
 {
     QString saveDir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     QString filename = QFileDialog::getOpenFileName(this, tr("Import block chain snapshot"), saveDir,
-                                                    tr("Block chain snapshot (*.zip)"));
+                                                    tr("Block chain snapshot (*.zip *.001)"));
     if (filename.isEmpty())
         return;
 #ifdef WIN32

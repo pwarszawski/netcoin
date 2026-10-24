@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <algorithm>
 #include <vector>
 
 #include <boost/filesystem.hpp>
@@ -37,32 +38,92 @@ FILE* OpenFile(const fs::path& p)
 #endif
 }
 
-/** Owns an opened archive. */
+int SeekFile(FILE* f, uint64_t nPos)
+{
+#ifdef WIN32
+    return _fseeki64(f, (__int64)nPos, SEEK_SET);
+#else
+    return fseeko(f, (off_t)nPos, SEEK_SET);
+#endif
+}
+
+/**
+ * Owns an opened archive. Large snapshots are published in parts
+ * (name.zip.001, name.zip.002, ... made with "split"): choosing the first
+ * part reads all of them as one file.
+ */
 class ZipReader
 {
 public:
     mz_zip_archive zip;
-    FILE* file;
+    std::vector<FILE*> vFiles;
+    std::vector<uint64_t> vStart;   // offset of each part in the whole archive
+    uint64_t nTotal;
     bool fOpen;
 
-    ZipReader() : file(NULL), fOpen(false) { memset(&zip, 0, sizeof(zip)); }
+    ZipReader() : nTotal(0), fOpen(false) { memset(&zip, 0, sizeof(zip)); }
     ~ZipReader()
     {
         if (fOpen) mz_zip_reader_end(&zip);
-        if (file) fclose(file);
+        for (size_t i = 0; i < vFiles.size(); i++)
+            fclose(vFiles[i]);
     }
+
+    static size_t Read(void* pOpaque, mz_uint64 nOfs, void* pBuf, size_t n)
+    {
+        ZipReader* r = (ZipReader*)pOpaque;
+        size_t nDone = 0;
+        while (nDone < n && nOfs + nDone < r->nTotal) {
+            uint64_t nPos = nOfs + nDone;
+            size_t i = r->vStart.size() - 1;
+            while (i > 0 && r->vStart[i] > nPos)
+                i--;
+            uint64_t nEnd = (i + 1 < r->vStart.size()) ? r->vStart[i + 1] : r->nTotal;
+            size_t nChunk = (size_t)std::min<uint64_t>(n - nDone, nEnd - nPos);
+            if (SeekFile(r->vFiles[i], nPos - r->vStart[i]) != 0)
+                break;
+            size_t nRead = fread((char*)pBuf + nDone, 1, nChunk, r->vFiles[i]);
+            nDone += nRead;
+            if (nRead != nChunk)
+                break;
+        }
+        return nDone;
+    }
+
     bool Open(const fs::path& p, std::string& strError)
     {
-        boost::system::error_code ec;
-        uint64_t nSize = fs::file_size(p, ec);
-        file = ec ? NULL : OpenFile(p);
-        if (!file) {
-            strError = strprintf(_("Cannot open %s"), p.string().c_str());
-            return false;
+        std::vector<fs::path> vParts;
+        std::string strName = p.filename().string();
+        if (strName.size() > 4 && strName.compare(strName.size() - 4, 4, ".001") == 0) {
+            std::string strBase = strName.substr(0, strName.size() - 4);
+            for (int i = 1; i < 1000; i++) {
+                fs::path part = p.parent_path() / strprintf("%s.%03d", strBase.c_str(), i);
+                if (!fs::exists(part))
+                    break;
+                vParts.push_back(part);
+            }
+        } else {
+            vParts.push_back(p);
         }
-        if (!mz_zip_reader_init_cfile(&zip, file, nSize, 0)) {
+        for (size_t i = 0; i < vParts.size(); i++) {
+            boost::system::error_code ec;
+            uint64_t nSize = fs::file_size(vParts[i], ec);
+            FILE* f = ec ? NULL : OpenFile(vParts[i]);
+            if (!f) {
+                strError = strprintf(_("Cannot open %s"), vParts[i].string().c_str());
+                return false;
+            }
+            vFiles.push_back(f);
+            vStart.push_back(nTotal);
+            nTotal += nSize;
+        }
+        zip.m_pRead = Read;
+        zip.m_pIO_opaque = this;
+        if (!mz_zip_reader_init(&zip, nTotal, 0)) {
             strError = strprintf(_("%s is not a valid snapshot archive (%s)"), p.string().c_str(),
                                  mz_zip_get_error_string(mz_zip_get_last_error(&zip)));
+            if (vParts.size() == 1 && strName.find(".zip.0") != std::string::npos)
+                strError += " " + std::string(_("Choose the part ending in .001; all parts must be in the same folder."));
             return false;
         }
         fOpen = true;

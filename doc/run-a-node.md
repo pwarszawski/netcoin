@@ -104,13 +104,14 @@ take several hours.
 
 A snapshot (`netcoin-snapshot-<height>.zip`, about 2 GB) contains the block
 files and the block index of a synchronized node, so nothing has to be
-downloaded block by block or verified again. Download it and its `.sha256`
-file, check it and load it:
+downloaded block by block or verified again. Snapshots larger than 1.9 GB are
+published in parts (`.zip.001`, `.zip.002`, ...); download all of them and
+the `.sha256` file into one folder, check them and load the first part:
 
 ```bash
-sha256sum -c netcoin-snapshot-*.zip.sha256
+sha256sum -c netcoin-snapshot-*.sha256
 sudo systemctl stop netcoind
-sudo -u netcoin netcoind -datadir=/var/lib/netcoin -loadsnapshot=$PWD/netcoin-snapshot-3357862.zip
+sudo -u netcoin netcoind -datadir=/var/lib/netcoin -loadsnapshot=$PWD/netcoin-snapshot-3357862.zip.001
 ```
 
 The previous block chain (if any) is moved to a `chain-backup-<date>`

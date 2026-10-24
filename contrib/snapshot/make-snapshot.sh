@@ -96,12 +96,25 @@ trap - EXIT
 restart
 
 cd "$OUTDIR"
-sha256sum "$NAME.zip" | tee "$NAME.zip.sha256"
-ls -la "$NAME.zip"
+# GitHub release files must be smaller than 2 GiB: split larger snapshots
+# into parts (name.zip.001, .002, ...); the wallet reads them as one file
+# when the first part is chosen
+FILES="$NAME.zip"
+if [ "$(stat -c %s "$NAME.zip")" -gt $((1900 * 1024 * 1024)) ]; then
+    echo "splitting into parts of 1900 MB"
+    rm -f "$NAME.zip".[0-9][0-9][0-9]
+    split -b 1900M -d -a 3 --numeric-suffixes=1 "$NAME.zip" "$NAME.zip."
+    rm -f "$NAME.zip"
+    FILES="$(ls "$NAME.zip".[0-9][0-9][0-9] | tr '\n' ' ')"
+fi
+sha256sum $FILES | tee "$NAME.sha256"
+ls -la $FILES
+FIRST="${FILES%% *}"
 cat <<EOF
 
-Snapshot: $OUTDIR/$NAME.zip (height $HEIGHT, block $HASH)
-Publish it together with $NAME.zip.sha256, e.g. as a GitHub release
-(files up to 2 GB). To use it: File > Import block chain snapshot,
-or: netcoind -loadsnapshot=$NAME.zip
+Snapshot of block $HEIGHT ($HASH):
+  $FILES
+Publish these files and $NAME.sha256, e.g. as a GitHub release. To use it,
+download all parts into one folder and choose $FIRST in
+File > Import block chain snapshot, or: netcoind -loadsnapshot=$FIRST
 EOF

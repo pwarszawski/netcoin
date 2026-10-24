@@ -730,8 +730,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-46" />
-        <source>Block chain snapshot (*.zip)</source>
-        <translation>Instantánea de la cadena de bloques (*.zip)</translation>
+        <source>Block chain snapshot (*.zip *.001)</source>
+        <translation>Instantánea de la cadena de bloques (*.zip *.001)</translation>
     </message>
     <message>
         <location line="+15" />

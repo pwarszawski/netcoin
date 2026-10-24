@@ -731,8 +731,8 @@ Adres: %4
     </message>
     <message>
         <location line="-46" />
-        <source>Block chain snapshot (*.zip)</source>
-        <translation>Migawka łańcucha bloków (*.zip)</translation>
+        <source>Block chain snapshot (*.zip *.001)</source>
+        <translation>Migawka łańcucha bloków (*.zip *.001)</translation>
     </message>
     <message>
         <location line="+15" />

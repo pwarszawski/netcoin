@@ -756,8 +756,8 @@ Adresse : %4
     </message>
     <message>
         <location line="-46" />
-        <source>Block chain snapshot (*.zip)</source>
-        <translation>Instantané de la chaîne de blocs (*.zip)</translation>
+        <source>Block chain snapshot (*.zip *.001)</source>
+        <translation>Instantané de la chaîne de blocs (*.zip *.001)</translation>
     </message>
     <message>
         <location line="+15" />
