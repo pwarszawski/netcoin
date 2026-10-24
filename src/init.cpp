@@ -19,6 +19,7 @@
 #include "util.h"
 #include "ui_interface.h"
 #include "checkpoints.h"
+#include "snapshot.h"
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -423,6 +424,7 @@ std::string HelpMessage()
         "  -checkblocks=<n>       " + _("How many blocks to check at startup (default: 2500, 0 = all)") + "\n" +
         "  -checklevel=<n>        " + _("How thorough the block verification is (0-6, default: 1)") + "\n" +
         "  -loadblock=<file>      " + _("Imports blocks from external blk000?.dat file") + "\n" +
+        "  -loadsnapshot=<file>   " + _("Replace the block chain with a snapshot (.zip) before starting; the old one is kept in a chain-backup folder") + "\n" +
         "  -maxorphanblocksmib=<n>   " + strprintf(_("Keep at most <n> MiB of unconnectable blocks in memory (default: %u)"), DEFAULT_MAX_ORPHAN_BLOCKS) + "\n" +
 
        "\n" + _("Block creation options:") + "\n" +
@@ -640,7 +642,14 @@ bool AppInit2(boost::thread_group& threadGroup)
     FILE* file = fopen(pathLockFile.string().c_str(), "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
-    if (!lock.try_lock())
+    // after "Import snapshot" the wallet restarts itself: give the old
+    // process time to exit
+    bool fLocked = lock.try_lock();
+    for (int i = 0; !fLocked && mapArgs.count("-loadsnapshot") && i < 120; i++) {
+        MilliSleep(500);
+        fLocked = lock.try_lock();
+    }
+    if (!fLocked)
         return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  NetCoin is probably already running."), GetDataDir().string().c_str()));
 /*
 #if !defined(WIN32) && !defined(QT_GUI)
@@ -899,11 +908,38 @@ bool AppInit2(boost::thread_group& threadGroup)
         return false;
     }
 
+    // replace the block chain with a snapshot (File > Import snapshot)
+    SnapshotInfo snapshot;
+    boost::filesystem::path pathChainBackup;
+    if (mapArgs.count("-loadsnapshot"))
+    {
+        uiInterface.InitMessage(_("Importing block chain snapshot..."));
+        std::string strError;
+        if (!ImportSnapshot(boost::filesystem::path(mapArgs["-loadsnapshot"]), snapshot, pathChainBackup, strError))
+            return InitError(_("Importing the snapshot failed:") + " " + strError);
+    }
+
     uiInterface.InitMessage(_("Loading block index..."));
     printf("Loading block index...\n");
     nStart = GetTimeMillis();
     if (!LoadBlockIndex())
         return InitError(_("Error loading block database"));
+
+    if (snapshot.nHeight >= 0)
+    {
+        // the best block must be the one the snapshot claims
+        map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(snapshot.hash);
+        if (mi == mapBlockIndex.end() || mi->second->nHeight != snapshot.nHeight || pindexBest == NULL ||
+            pindexBest->nHeight < snapshot.nHeight || (mi->second != pindexBest && mi->second->pnext == NULL))
+        {
+            return InitError(strprintf(_("The imported snapshot is not valid: block %d (%s) is not in its block chain. "
+                                         "Close NetCoin and delete blk0001.dat and the txleveldb folder from the data directory "
+                                         "to download the block chain from the network%s."),
+                                       snapshot.nHeight, snapshot.hash.ToString().c_str(),
+                                       pathChainBackup.empty() ? "" : (", or move the files from " + pathChainBackup.string() + " back").c_str()));
+        }
+        printf("Snapshot loaded: best block %d %s\n", pindexBest->nHeight, pindexBest->GetBlockHash().ToString().c_str());
+    }
 
 
     // as LoadBlockIndex can take several minutes, it's possible the user

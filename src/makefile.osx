@@ -74,6 +74,8 @@ OBJS= \
     obj/rpcwallet.o \
     obj/script.o \
     obj/scrypt.o \
+    obj/snapshot.o \
+    obj/miniz.o \
     obj/sync.o \
     obj/util.o \
     obj/wallet.o \
@@ -92,6 +94,10 @@ obj/build.h: FORCE
 	@mkdir -p obj
 	/bin/sh ../share/genbuild.sh obj/build.h
 version.cpp: obj/build.h
+
+obj/miniz.o: miniz/miniz.c
+	@mkdir -p obj
+	$(CC) -c -O2 -mmacosx-version-min=$(MACOSX_DEPLOYMENT_TARGET) $(CFLAGS) -o $@ $^
 
 obj/scrypt.o: scrypt.c
 	@mkdir -p obj
