@@ -49,6 +49,27 @@ codesign --force --deep --sign - "$APP"
 codesign --verify --deep --strict "$APP"
 "$APP/Contents/MacOS/netcoind" -? | head -3
 
+# smoke test of the bundled binaries (nobody tests the Mac build by hand):
+# the node starts, answers RPC and stops cleanly; the wallet window starts
+SMOKE="$(mktemp -d)"
+printf 'rpcuser=u\nrpcpassword=p\nlisten=0\nlistenonion=0\nconnect=0\ndnsseed=0\n' > "$SMOKE/netcoin.conf"
+"$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" -daemon
+for i in $(seq 1 30); do
+    "$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" getinfo >/dev/null 2>&1 && break
+    sleep 2
+done
+"$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" getinfo | grep -E '"version"|"blocks"'
+"$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" stop
+sleep 5
+mkdir -p "$SMOKE/gui"
+QT_QPA_PLATFORM=offscreen QT_QPA_PLATFORM_PLUGIN_PATH="$QT5/plugins/platforms" "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
+GUIPID=$!
+sleep 30
+kill -0 "$GUIPID"          # still running after 30 s
+grep -a "Done loading" "$SMOKE/gui/testnet/debug.log"
+kill "$GUIPID"; wait "$GUIPID" || true
+rm -rf "$SMOKE"
+
 cp "$ROOT/COPYING" "$DIST/COPYING.txt"
 cp "$ROOT/contrib/ci/README-macos.txt" "$DIST/README.txt"
 ln -s /Applications "$DIST/Applications"
