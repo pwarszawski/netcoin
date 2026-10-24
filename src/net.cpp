@@ -2178,8 +2178,10 @@ void ThreadMessageHandler()
 
 
 
-bool BindListenPort(const CService &addrBind, string& strError)
+bool BindListenPort(const CService &addrBind, string& strError, bool* pfInUse)
 {
+    if (pfInUse)
+        *pfInUse = false;
     strError = "";
     int nOne = 1;
 /*
@@ -2217,6 +2219,14 @@ bool BindListenPort(const CService &addrBind, string& strError)
         printf("%s\n", strError.c_str());
         return false;
     }
+
+#ifdef WIN32
+    // a process started by the wallet (restart after "Import snapshot") must
+    // not inherit the listening socket and keep the port busy
+    SetHandleInformation((HANDLE)hListenSocket, HANDLE_FLAG_INHERIT, 0);
+#else
+    fcntl(hListenSocket, F_SETFD, FD_CLOEXEC);
+#endif
 
 #ifdef SO_NOSIGPIPE
     // Different way of disabling SIGPIPE on BSD
@@ -2269,7 +2279,10 @@ bool BindListenPort(const CService &addrBind, string& strError)
             strError = strprintf(_("Unable to bind to %s on this computer. Netcoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
+        if (pfInUse)
+            *pfInUse = (nErr == WSAEADDRINUSE);
         printf("%s\n", strError.c_str());
+        closesocket(hListenSocket);
         return false;
     }
     printf("Bound to %s\n", addrBind.ToString().c_str());

@@ -326,7 +326,15 @@ bool static Bind(const CService &addr, bool fError = true) {
     if (IsLimited(addr))
         return false;
     std::string strError;
-    if (!BindListenPort(addr, strError)) {
+    bool fInUse = false;
+    bool fOk = BindListenPort(addr, strError, &fInUse);
+    // after "Import snapshot" the previous process may still hold the port
+    // for a moment
+    for (int i = 0; !fOk && fInUse && mapArgs.count("-loadsnapshot") && i < 60; i++) {
+        MilliSleep(1000);
+        fOk = BindListenPort(addr, strError, &fInUse);
+    }
+    if (!fOk) {
         if (fError)
             return InitError(strError);
         return false;
