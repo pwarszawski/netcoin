@@ -108,7 +108,7 @@ done
 "$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" stop
 sleep 5
 mkdir -p "$SMOKE/gui"
-QT_DEBUG_PLUGINS=1 QT_QPA_PLATFORM=minimal "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
+"$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
 GUIPID=$!
 sleep 30
 kill -0 "$GUIPID"          # still running after 30 s
