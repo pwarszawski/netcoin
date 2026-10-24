@@ -182,7 +182,11 @@ OverviewPage::OverviewPage(QWidget *parent) :
          ui->diffplot->axisRect()->setBackground(QColor(0, 0, 0,0));
              ui->diffplot->xAxis->setLabelColor("#0381ff");
           ui->diffplot->yAxis->setLabelColor("#0381ff");
- ui->scrollArea->setStyleSheet("background:transparent");
+ // only the scroll area itself is transparent (a style sheet without a
+ // selector would also apply to everything inside it and hide the theme's
+ // group box backgrounds)
+ ui->scrollArea->setStyleSheet("QScrollArea#scrollArea, QWidget#qt_scrollarea_viewport, "
+                               "QWidget#scrollAreaWidgetContents_4 { background: transparent; }");
 }
 
 

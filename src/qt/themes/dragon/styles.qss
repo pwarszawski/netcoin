@@ -728,3 +728,20 @@ QBalloonTip QPushButton:hover {
 	border: none;  
 	background-color: $accent-color;
 }
+/* Dark panel under the group boxes so that the text stays readable on the
+   busy background */
+QGroupBox {
+	background-color: rgba(0,0,0,160);
+	border: 1px solid rgba(255,255,255,40);
+	border-radius: 4px;
+	margin-top: 18px;
+	padding-top: 6px;
+}
+QGroupBox::title {
+	subcontrol-origin: margin;
+	subcontrol-position: top left;
+	left: 8px;
+	padding: 1px 6px;
+	background-color: rgba(0,0,0,160);
+	border-radius: 3px;
+}
