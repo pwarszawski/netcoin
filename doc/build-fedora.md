@@ -17,7 +17,7 @@ sudo dnf install qt6-qtbase-devel qt6-linguist qrencode-devel
 ## 2. Headless daemon (`netcoind`)
 
 ```sh
-git clone -b ubuntu-24.04-revival https://github.com/pwarszawski/netcoin.git
+git clone https://github.com/netcoinfoundation/netcoin.git
 cd netcoin/src
 make -f makefile.unix -j"$(nproc)"
 ```

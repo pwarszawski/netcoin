@@ -29,7 +29,7 @@ sudo apt install qt6-base-dev qt6-tools-dev-tools qt6-l10n-tools libqrencode-dev
 ## 2. Headless daemon (`netcoind`)
 
 ```sh
-git clone -b ubuntu-24.04-revival https://github.com/pwarszawski/netcoin.git
+git clone https://github.com/netcoinfoundation/netcoin.git
 cd netcoin/src
 make -f makefile.unix -j"$(nproc)"
 strip netcoind          # optional, makes the binary much smaller

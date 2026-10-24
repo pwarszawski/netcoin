@@ -26,7 +26,7 @@ as workflow artifacts.
 
 1. Install MSYS2 and open the **MSYS2 UCRT64** shell.
 2. `pacman -S git`
-3. `git clone -b ubuntu-24.04-revival https://github.com/pwarszawski/netcoin.git`
+3. `git clone https://github.com/netcoinfoundation/netcoin.git`
 4. `cd netcoin && bash contrib/ci/build-windows.sh mybuild`
 
 The script installs the required packages, builds `netcoind.exe`, runs the

@@ -73,7 +73,7 @@ is not reachable from outside.
 
 ```bash
 sudo wget -O /etc/systemd/system/netcoind.service \
-  https://raw.githubusercontent.com/pwarszawski/netcoin/ubuntu-24.04-revival/contrib/init/netcoind.service
+  https://raw.githubusercontent.com/netcoinfoundation/netcoin/master/contrib/init/netcoind.service
 sudo systemctl daemon-reload
 sudo systemctl enable --now netcoind
 ```

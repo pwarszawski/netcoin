@@ -17,7 +17,7 @@ older; build with `USE_BDB=0` to leave it out.
 ## 2. Headless daemon (`netcoind`)
 
 ```sh
-git clone -b ubuntu-24.04-revival https://github.com/pwarszawski/netcoin.git
+git clone https://github.com/netcoinfoundation/netcoin.git
 cd netcoin/src
 make -f makefile.osx -j"$(sysctl -n hw.ncpu)"
 make -f makefile.osx test_netcoin && ./test_netcoin
