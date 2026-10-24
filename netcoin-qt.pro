@@ -536,9 +536,10 @@ system($$QMAKE_LRELEASE -silent $$_PRO_FILE_)
 # netcoin.exe. use: qmake MSYS2=1 STATIC=1 [LEVELDB_EXTRA_LIBS="-lsnappy -lcrc32c"]
 win32:contains(MSYS2, 1):contains(STATIC, 1) {
     QMAKE_LFLAGS += -static
-    # only the image format plugins the wallet uses (the others, e.g. TIFF and
-    # WebP, would need more static libraries)
-    QTPLUGIN.imageformats = qico qgif
+    # only the image format plugins the wallet uses (JPEG for the theme
+    # backgrounds; the others, e.g. TIFF and WebP, would need more static
+    # libraries)
+    QTPLUGIN.imageformats = qico qgif qjpeg
     # after the Qt libraries on the link line
     QMAKE_LIBS += $$QT_EXTRA_LIBS
     LIBS += $$LEVELDB_EXTRA_LIBS -lcrypt32 -lbcrypt -lz

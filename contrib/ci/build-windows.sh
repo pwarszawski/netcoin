@@ -29,7 +29,7 @@ trap fail ERR
 
 log "installing packages"
 REQUIRED="toolchain boost openssl sqlite3 leveldb miniupnpc zlib qt6-base qt6-tools"
-[ "$STATIC" = 1 ] && REQUIRED="$REQUIRED qt6-static"
+[ "$STATIC" = 1 ] && REQUIRED="$REQUIRED qt6-static libjpeg-turbo"
 OPTIONAL="db qrencode libqrencode"
 # the MSYS2 mirrors are sometimes slow; retry
 for attempt in 1 2 3 4; do
@@ -152,7 +152,7 @@ BDBARG=""
 QT_EXTRA_LIBS=""
 if [ "$STATIC" = 1 ]; then
     QT_EXTRA_LIBS="$(pkg-config --static --libs-only-l harfbuzz freetype2 libpng 2>/dev/null | tr '\n' ' ')"
-    for l in graphite2 bz2 brotlidec brotlicommon png16 z; do
+    for l in jpeg graphite2 bz2 brotlidec brotlicommon png16 z; do
         [ -f "$MINGW_PREFIX/lib/lib$l.a" ] && QT_EXTRA_LIBS="$QT_EXTRA_LIBS -l$l"
     done
     QT_EXTRA_LIBS="$QT_EXTRA_LIBS -lusp10 -lrpcrt4 -ldwrite -lgdi32"
