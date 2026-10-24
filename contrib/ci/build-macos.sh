@@ -78,7 +78,7 @@ for fw in "$APP/Contents/Frameworks"/*.framework; do [ -d "$fw" ] && codesign --
 codesign --force --sign - "$APP/Contents/MacOS/netcoind"
 codesign --force --sign - "$APP"
 codesign --verify --deep --strict --verbose=2 "$APP"
-"$APP/Contents/MacOS/netcoind" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt"; rm -f "$ROOT/dist/help.txt"
+("$APP/Contents/MacOS/netcoind" -? > "$ROOT/dist/help.txt" || true); grep -q Usage "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt"; rm -f "$ROOT/dist/help.txt"
 
 echo "== smoke test"
 # smoke test of the bundled binaries (nobody tests the Mac build by hand):

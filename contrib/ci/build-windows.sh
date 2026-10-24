@@ -148,5 +148,5 @@ else
     powershell -NoProfile -Command "Compress-Archive -Path 'netcoin-$VERSION-win64' -DestinationPath 'netcoin-$VERSION-win64.zip'"
 fi
 ls -la "$DIST" "$ROOT/dist" | tee -a "$LOG"
-"$DIST/netcoind.exe" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt" | tee -a "$LOG"; rm -f "$ROOT/dist/help.txt"
+("$DIST/netcoind.exe" -? > "$ROOT/dist/help.txt" || true); grep -q Usage "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt" | tee -a "$LOG"; rm -f "$ROOT/dist/help.txt"
 trap - ERR
