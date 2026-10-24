@@ -14,7 +14,7 @@ LOG="$ROOT/build-macos.log"
 fail() {
     if [ -n "${GITHUB_ACTIONS:-}" ]; then
         local msg
-        msg="$( (grep -E 'error:|Error [0-9]|Undefined symbols|ld: |No such file' "$LOG" | tail -15; echo '--- last lines ---'; tail -25 "$LOG") | sed 's/%/%25/g' | sed ':a;N;$!ba;s/\n/%0A/g')"
+        msg="$( (grep -E 'error:|Error [0-9]|ld: |No such file' "$LOG" | tail -15; grep -A25 'Undefined symbols' "$LOG" | cut -c1-250 | head -60; echo '--- last lines ---'; tail -25 "$LOG" | cut -c1-400) | sed 's/%/%25/g' | sed ':a;N;$!ba;s/\n/%0A/g')"
         echo "::error title=macOS build failed::${msg:0:60000}"
     fi
     exit 1
