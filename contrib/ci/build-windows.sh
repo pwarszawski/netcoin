@@ -59,6 +59,19 @@ if [ "$STATIC" = 1 ]; then
         [ -f "$MINGW_PREFIX/lib/lib$l.a" ] || { echo "static library lib$l.a missing" | tee -a "$LOG"; false; }
     done
     log "extra libraries for LevelDB:${LEVELDB_EXTRA_LIBS:- none}"
+    # Berkeley DB: libdb_cxx.a is only an import library; use the real
+    # static archive (an import library contains __imp_ symbols)
+    BDB_LIB_SUFFIX=""
+    if [ "$HAVE_BDB" = 1 ]; then
+        BDB_LIB_SUFFIX="none"
+        for suffix in "" "-6.2"; do
+            a="$MINGW_PREFIX/lib/libdb_cxx$suffix.a"
+            if [ -f "$a" ] && ! nm "$a" 2>/dev/null | grep -q "__imp_"; then BDB_LIB_SUFFIX="$suffix"; break; fi
+        done
+        ls -la "$MINGW_PREFIX"/lib/libdb_cxx* >>"$LOG" 2>&1 || true
+        [ "$BDB_LIB_SUFFIX" != none ] || { echo "no static Berkeley DB library" | tee -a "$LOG"; false; }
+        log "Berkeley DB static library: libdb_cxx$BDB_LIB_SUFFIX.a"
+    fi
     # MSYS2 ships libqrencode only as a DLL: build the static library
     if [ "$HAVE_QR" = 1 ] && [ ! -f "$MINGW_PREFIX/lib/libqrencode.a" ]; then
         log "building static libqrencode"
@@ -70,7 +83,7 @@ if [ "$STATIC" = 1 ]; then
         [ -f "$MINGW_PREFIX/lib/libqrencode.a" ] || { echo "static libqrencode not built" | tee -a "$LOG"; false; }
     fi
 fi
-MAKEARGS=(USE_BDB=$HAVE_BDB STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS")
+MAKEARGS=(USE_BDB=$HAVE_BDB STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS" "BDB_LIB_SUFFIX=${BDB_LIB_SUFFIX:-}")
 
 log "building netcoind.exe"
 cd "$ROOT/src"
@@ -105,7 +118,7 @@ cd "$ROOT/build-qt"
 QRARG="USE_QRCODE=$HAVE_QR"
 BDBARG=""
 [ "$HAVE_BDB" = 1 ] || BDBARG="USE_BDB=0"
-"$QMAKE" ../netcoin-qt.pro MSYS2=1 STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS" \
+"$QMAKE" ../netcoin-qt.pro MSYS2=1 STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS" "BDB_LIB_SUFFIX=${BDB_LIB_SUFFIX:-}" \
     "QMAKE_LRELEASE=$(cygpath -m "$LRELEASE")" USE_UPNP=1 $QRARG $BDBARG CONFIG+=release >>"$LOG" 2>&1
 make -j"$JOBS" >>"$LOG" 2>&1
 
