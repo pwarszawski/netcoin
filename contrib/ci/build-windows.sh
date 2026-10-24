@@ -52,6 +52,29 @@ log "Berkeley DB (wallet conversion): $HAVE_BDB, QR codes: $HAVE_QR, static: $ST
 # a static LevelDB needs the libraries it was built with
 LEVELDB_EXTRA_LIBS=""
 if [ "$STATIC" = 1 ]; then
+    # MSYS2's static LevelDB is built without Snappy, so it cannot read
+    # databases made on Linux/macOS (e.g. a block chain snapshot). Build
+    # LevelDB with Snappy instead.
+    if ! nm "$MINGW_PREFIX/lib/libleveldb.a" 2>/dev/null | grep -q -i snappy; then
+        log "building static LevelDB with Snappy"
+        pacman -S --noconfirm --needed "$P-cmake" "$P-snappy" >>"$LOG" 2>&1 || true
+        if [ ! -f "$MINGW_PREFIX/lib/libsnappy.a" ] || nm "$MINGW_PREFIX/lib/libsnappy.a" 2>/dev/null | grep -q "_head_"; then
+            log "building static Snappy"
+            rm -rf "$ROOT/build-snappy"
+            git clone -q --depth 1 -b 1.2.1 https://github.com/google/snappy.git "$ROOT/build-snappy" >>"$LOG" 2>&1
+            (cd "$ROOT/build-snappy" && cmake -G "MSYS Makefiles" -DBUILD_SHARED_LIBS=OFF -DSNAPPY_BUILD_TESTS=OFF \
+                -DSNAPPY_BUILD_BENCHMARKS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MINGW_PREFIX" . \
+                && make -j"$JOBS" && make install) >>"$LOG" 2>&1
+        fi
+        rm -rf "$ROOT/build-leveldb"
+        git clone -q --depth 1 -b 1.23 https://github.com/google/leveldb.git "$ROOT/build-leveldb" >>"$LOG" 2>&1
+        # HAVE_CRC32C/HAVE_TCMALLOC=0: do not pick up DLL-only libraries
+        (cd "$ROOT/build-leveldb" && cmake -G "MSYS Makefiles" -DBUILD_SHARED_LIBS=OFF -DLEVELDB_BUILD_TESTS=OFF \
+            -DLEVELDB_BUILD_BENCHMARKS=OFF -DHAVE_CRC32C=0 -DHAVE_TCMALLOC=0 -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX="$MINGW_PREFIX" . \
+            && make -j"$JOBS" && make install) >>"$LOG" 2>&1
+        nm "$MINGW_PREFIX/lib/libleveldb.a" 2>/dev/null | grep -q -i snappy || { echo "LevelDB was built without Snappy" | tee -a "$LOG"; false; }
+    fi
     for l in snappy crc32c; do
         [ -f "$MINGW_PREFIX/lib/lib$l.a" ] && LEVELDB_EXTRA_LIBS="$LEVELDB_EXTRA_LIBS -l$l"
     done
