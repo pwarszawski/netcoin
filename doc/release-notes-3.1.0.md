@@ -85,7 +85,9 @@ re-validated the complete main chain, from the genesis block up to block
 * File > Import block chain snapshot (and `-loadsnapshot=<file>` for
   `netcoind`): start with the block chain of another node instead of
   downloading and verifying 3.3 million blocks. `contrib/snapshot/make-snapshot.sh`
-  makes such a snapshot; see doc/run-a-node.md.
+  makes such a snapshot; see doc/run-a-node.md. Snapshot of block 3357862:
+  https://github.com/pwarszawski/netcoin/releases/tag/snapshot-3357862
+  (choose the `.zip.001` file; importing takes about a minute).
 * Qt 6. Transactions show Unconfirmed / Confirming (n/6) again instead
   of Confirmed right away.
 

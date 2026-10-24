@@ -105,7 +105,9 @@ take several hours.
 A snapshot (`netcoin-snapshot-<height>.zip`, about 2 GB) contains the block
 files and the block index of a synchronized node, so nothing has to be
 downloaded block by block or verified again. Snapshots larger than 1.9 GB are
-published in parts (`.zip.001`, `.zip.002`, ...); download all of them and
+published in parts (`.zip.001`, `.zip.002`, ...); the current one is at
+https://github.com/pwarszawski/netcoin/releases/tag/snapshot-3357862.
+Download all parts and
 the `.sha256` file into one folder, check them and load the first part:
 
 ```bash
