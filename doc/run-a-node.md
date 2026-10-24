@@ -11,7 +11,7 @@ the release to install first:
 
 ```bash
 UBU=26.04          # or 24.04
-VER=v3.1.0-rc2     # see https://github.com/pwarszawski/netcoin/releases
+VER=v3.1.0-rc6     # the newest version: https://github.com/pwarszawski/netcoin/releases
 ```
 
 ## 1. Install the binary
