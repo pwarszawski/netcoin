@@ -95,7 +95,7 @@ version.cpp: obj/build.h
 
 obj/scrypt.o: scrypt.c
 	@mkdir -p obj
-	$(CC) -c -O2 -mmacosx-version-min=$(MACOSX_DEPLOYMENT_TARGET) $(CFLAGS) -o $@ $^
+	$(CC) -c -O2 -mmacosx-version-min=$(MACOSX_DEPLOYMENT_TARGET) -I$(OPENSSL_PREFIX)/include $(CFLAGS) -o $@ $^
 
 obj/%.o: %.cpp
 	@mkdir -p obj
