@@ -100,6 +100,34 @@ sudo tail -f /var/lib/netcoin/debug.log      # Ctrl+C to stop
 The node now downloads the whole block chain from the network, which can
 take several hours.
 
+### Fastest start: a block chain snapshot (optional)
+
+A snapshot (`netcoin-snapshot-<height>.zip`, about 2 GB) contains the block
+files and the block index of a synchronized node, so nothing has to be
+downloaded block by block or verified again. Download it and its `.sha256`
+file, check it and load it:
+
+```bash
+sha256sum -c netcoin-snapshot-*.zip.sha256
+sudo systemctl stop netcoind
+sudo -u netcoin netcoind -datadir=/var/lib/netcoin -loadsnapshot=$PWD/netcoin-snapshot-3357862.zip
+```
+
+The previous block chain (if any) is moved to a `chain-backup-<date>`
+folder; delete it when the node runs. After loading, the node checks that
+its best block is the one named in the snapshot. Stop it with Ctrl+C when
+`debug.log` shows `Done loading` and start the service again. In the
+graphical wallet the same is in File > Import block chain snapshot.
+
+To make a snapshot of your own node (it is stopped for a few minutes):
+
+```bash
+sudo contrib/snapshot/make-snapshot.sh -o /tmp
+```
+
+A snapshot is only as trustworthy as whoever made it: the wallet says
+whether its height and hash are on the list built into this version.
+
 ### Faster start: import an existing block file (optional)
 
 If you have a synchronized wallet elsewhere, you can copy its block file

@@ -4,17 +4,17 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../forms/aboutdialog.ui" line="+14"/>
+        <location filename="../forms/aboutdialog.ui" line="+14" />
         <source>About NetCoin</source>
         <translation>О NetCoin</translation>
     </message>
     <message>
-        <location line="+160"/>
+        <location line="+160" />
         <source>&lt;b&gt;NetCoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;NetCoin&lt;/b&gt; версия</translation>
     </message>
     <message>
-        <location line="+159"/>
+        <location line="+159" />
         <source>
 Copyright © 2009-2012 Bitcoin Developers
 Copyright © 2012 PeerCoin Developers
@@ -23,127 +23,127 @@ Copyright © 2014 NetCoin Developers
 Lead Developer: Who
 design by: meee and regtable69
 Translated by: Arjan Dekkers - Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+20"/>
-        <source>This is experimental software. If you don&apos;t treat it as such, you&apos;re likely to put an eye out!
+        <location line="+20" />
+        <source>This is experimental software. If you don't treat it as such, you're likely to put an eye out!
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="+14"/>
+        <location filename="../forms/addressbookpage.ui" line="+14" />
         <source>Address Book</source>
         <translation>Адресная книга</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+98" />
         <source>&amp;New Address</source>
         <translation>&amp;Новый адрес</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-81" />
         <source>Here are your NetCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это ваши адреса NetCoin для получения платежей. Можно давать каждому отправителю отдельный адрес, чтобы знать, кто вам платит.</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/doubleClickToEditTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+20" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/doubleClickToEditTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+30"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/deleteCurrentAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+30" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/deleteCurrentAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+14"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/copyCurrentAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+14" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/copyCurrentAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&amp;Copy Address</source>
         <translation>&amp;Копировать адрес</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/createNewNetcoinAddress.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+11" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/createNewNetcoinAddress.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+14"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/signMessageTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+14" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/signMessageTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+14"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/verifyMessageTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+14" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/verifyMessageTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+14"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/showQrCodeTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+14" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/showQrCodeTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Show &amp;QR Code</source>
         <translation>Показать &amp;QR код</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>S4E</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-39" />
         <source>Sign &amp;Message</source>
         <translation>&amp;Подписать сообщение</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>&amp;Verify Message</source>
         <translation>&amp;Проверить сообщение</translation>
     </message>
     <message>
-        <location line="-56"/>
+        <location line="-56" />
         <source>&amp;Delete</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+69"/>
+        <location filename="../addressbookpage.cpp" line="+69" />
         <source>Copy &amp;Label</source>
         <translation>Копировать &amp;метку</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location line="+273"/>
+        <location line="+273" />
         <source>Export Address Book Data</source>
         <translation>Экспортировать адресную книгу</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Comma separated file (*.csv)</source>
         <translation>Текст, разделённый запятыми (*.csv)</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Error exporting</source>
         <translation>Ошибка экспорта</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Could not write to file %1.</source>
         <translation>Невозможно записать в файл %1.</translation>
     </message>
@@ -151,17 +151,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+144"/>
+        <location filename="../addresstablemodel.cpp" line="+145" />
         <source>Label</source>
         <translation>Метка</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+36" />
         <source>(no label)</source>
         <translation>[нет метки]</translation>
     </message>
@@ -169,150 +169,150 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>AskPassphraseDialog</name>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="+26" />
         <source>Passphrase Dialog</source>
         <translation>Диалог ввода пароля</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+21" />
         <source>Enter passphrase</source>
         <translation>Введите пароль</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>New passphrase</source>
         <translation>Новый пароль</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+17" />
         <source>Repeat new passphrase</source>
         <translation>Повторите новый пароль</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+33" />
         <source>Serves to disable trivial use of sendmoney when the OS account is compromised. Provides no real security.</source>
         <translation>Затрудняет простое использование sendmoney, если учётная запись ОС скомпрометирована. Реальной защиты не даёт.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>For staking only</source>
         <translation>Только для участия в доле</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+37"/>
+        <location filename="../askpassphrasedialog.cpp" line="+37" />
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Введите новый пароль для бумажника. &lt;br/&gt; Пожалуйста, используйте фразы из &lt;b&gt;10 или более случайных символов,&lt;/b&gt; или &lt;b&gt;восьми и более слов.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Encrypt wallet</source>
         <translation>Зашифровать бумажник</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Unlock wallet</source>
         <translation>Разблокировать бумажник</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Decrypt wallet</source>
         <translation>Расшифровать бумажник</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Change passphrase</source>
         <translation>Сменить пароль</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Enter the old and new passphrase to the wallet.</source>
         <translation>Введите старый и новый пароль для бумажника.</translation>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+49" />
         <source>Confirm wallet encryption</source>
         <translation>Подтвердите шифрование бумажника</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
         <translation>Внимание: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ МОНЕТЫ&lt;/b&gt;!</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы уверены, что хотите зашифровать ваш бумажник?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>ВАЖНО: все предыдущие резервные копии вашего кошелька должны быть заменены новым зашифрованным файлом. В целях безопасности предыдущие резервные копии нешифрованного кошелька станут бесполезны, как только вы начнёте использовать новый шифрованный кошелёк.</translation>
     </message>
     <message>
-        <location line="+103"/>
-        <location line="+24"/>
+        <location line="+103" />
+        <location line="+24" />
         <source>Warning: The Caps Lock key is on!</source>
         <translation>Внимание: Caps Lock включен!</translation>
     </message>
     <message>
-        <location line="-133"/>
-        <location line="+60"/>
+        <location line="-133" />
+        <location line="+60" />
         <source>Wallet encrypted</source>
         <translation>Бумажник зашифрован</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-58" />
         <source>Netcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location line="+7"/>
-        <location line="+44"/>
-        <location line="+6"/>
+        <location line="+13" />
+        <location line="+7" />
+        <location line="+44" />
+        <location line="+6" />
         <source>Wallet encryption failed</source>
         <translation>Не удалось зашифровать бумажник</translation>
     </message>
     <message>
-        <location line="-56"/>
+        <location line="-56" />
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Шифрование бумажника не удалось из-за внутренней ошибки. Ваш бумажник не был зашифрован.</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+50"/>
+        <location line="+7" />
+        <location line="+50" />
         <source>The supplied passphrases do not match.</source>
         <translation>Введённые пароли не совпадают.</translation>
     </message>
     <message>
-        <location line="-38"/>
+        <location line="-38" />
         <source>Wallet unlock failed</source>
         <translation>Разблокировка бумажника не удалась</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+12"/>
-        <location line="+19"/>
+        <location line="+1" />
+        <location line="+12" />
+        <location line="+19" />
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Указанный пароль не подходит.</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-20" />
         <source>Wallet decryption failed</source>
         <translation>Расшифрование бумажника не удалось</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Пароль бумажника успешно изменён.</translation>
     </message>
@@ -320,289 +320,299 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+363"/>
+        <location filename="../bitcoingui.cpp" line="+374" />
         <source>Sign &amp;message...</source>
         <translation>&amp;Подписать сообщение</translation>
     </message>
     <message>
-        <location line="+419"/>
+        <location line="+377" />
         <source>Synchronizing with network...</source>
         <translation>Синхронизация с сетью...</translation>
     </message>
     <message>
-        <location line="-515"/>
+        <location line="-475" />
         <source>&amp;Overview</source>
         <translation>О&amp;бзор</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакции</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&amp;Address Book</source>
         <translation>&amp;Адресная книга</translation>
     </message>
     <message>
-        <location line="-12"/>
+        <location line="-12" />
         <source>&amp;Receive coins</source>
         <translation>&amp;Получение монет</translation>
     </message>
     <message>
-        <location line="-6"/>
+        <location line="-6" />
         <source>&amp;Send coins</source>
         <translation>Отп&amp;равка монет</translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+64" />
         <source>E&amp;xit</source>
         <translation>В&amp;ыход</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Quit application</source>
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Show information about Netcoin</source>
-        <translation>Показать информацию о Netcoin&apos;е</translation>
+        <translation>Показать информацию о Netcoin'е</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>About &amp;Qt</source>
         <translation>О &amp;Qt</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Show information about Qt</source>
         <translation>Показать информацию о Qt</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>&amp;Options...</source>
         <translation>Оп&amp;ции...</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Зашифровать бумажник</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&amp;Backup Wallet...</source>
         <translation>&amp;Сделать резервную копию бумажника</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+4" />
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Изменить пароль</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>&amp;Export...</source>
         <translation>&amp;Экспорт...</translation>
     </message>
     <message>
-        <location line="-19"/>
+        <location line="-21" />
         <source>Modify configuration options for Netcoin</source>
         <translation>Изменить параметры конфигурации Netcoin</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Encrypt or decrypt wallet</source>
         <translation>Зашифровать или расшифровать бумажник</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Backup wallet to another location</source>
         <translation>Сделать резервную копию бумажника в другом месте</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+4" />
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Изменить пароль шифрования бумажника</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&amp;Debug window</source>
         <translation>&amp;Окно отладки</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Open debugging and diagnostic console</source>
         <translation>Открыть консоль отладки и диагностики</translation>
     </message>
     <message>
-        <location line="-8"/>
+        <location line="-8" />
         <source>&amp;Verify message...</source>
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <location line="-263"/>
+        <location line="-265" />
         <source>Netcoin</source>
         <translation>Netcoin</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Wallet</source>
         <translation>Бумажник</translation>
     </message>
     <message>
-        <location line="+168"/>
+        <location line="+168" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/overviewTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/sendTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/recieveTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/transactionTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/addressTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>&amp;Services</source>
         <translation>&amp;Сервисы</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/servicesTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>&amp;Staking</source>
         <translation>&amp;Стейкинг</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/stakingTabTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&amp;PIR Calculator</source>
         <translation>Калькулятор &amp;PIR</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Open PIR Calculator</source>
         <translation>Открыть калькулятор PIR</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Spli&amp;t coins...</source>
         <translation>Р&amp;азделить монеты...</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Split the balance into several coins, so that a stake does not lock all of it</source>
         <translation>Разделить баланс на несколько монет, чтобы стейк не блокировал всё</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>&amp;About Netcoin</source>
         <translation>&amp;О Netcoin</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>&amp;Show / Hide</source>
         <translation>&amp;Показать / Скрыть</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+6" />
+        <source>&amp;Import block chain snapshot...</source>
+        <translation>&amp;Импортировать снимок цепочки блоков...</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Load the block chain from a snapshot file instead of downloading it</source>
+        <translation>Загрузить цепочку блоков из файла снимка вместо скачивания</translation>
+    </message>
+    <message>
+        <location line="+4" />
         <source>Unlock wallet</source>
         <translation>Разблокировать бумажник</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>&amp;Lock Wallet</source>
         <translation>&amp;Заблокировать бумажник</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Lock wallet</source>
         <translation>Заблокировать бумажник</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Show stake report</source>
         <translation>Показать отчёт о стейкинге</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Open the Stake Report Box</source>
         <translation>Открыть окно отчёта о стейкинге</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/exportTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+55" />
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9" />
         <source>&amp;Settings</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>T&amp;hemes</source>
         <translation>&amp;Темы</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&amp;Help</source>
         <translation>&amp;Помощь</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Information</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Tabs toolbar</source>
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Actions toolbar</source>
         <translation>Панель действий</translation>
     </message>
     <message>
-        <location line="+14"/>
-        <location line="+9"/>
+        <location line="+14" />
+        <location line="+9" />
         <source>[testnet]</source>
         <translation>[тестовая сеть]</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+66"/>
+        <location line="+0" />
+        <location line="+66" />
         <source>Netcoin client</source>
         <translation>Netcoin клиент</translation>
     </message>
     <message numerus="yes">
-        <location line="+72"/>
+        <location line="+72" />
         <source>%n active connection(s) to Netcoin network</source>
         <translation>
             <numerusform>%n активное соединение с сетью</numerusform>
@@ -611,73 +621,63 @@ This product includes software developed by the OpenSSL Project for use in the O
         </translation>
     </message>
     <message>
-        <location line="+727"/>
-        <source>.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>..</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-162"/>
+        <location line="+578" />
         <source>Not staking because wallet is locked</source>
         <translation>Не участвуем в доле, так как кошелёк заблокирован</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Not staking because wallet is offline</source>
         <translation>Не участвуем в доле, так как кошелёк оффлайн</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Not staking because wallet is syncing</source>
         <translation>Не участвуем в доле, так как кошелёк синхронизируется</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Not staking because you don&apos;t have mature coins</source>
+        <location line="+2" />
+        <source>Not staking because you don't have mature coins</source>
         <translation>Не участвуем в доле, так как нет зрелых монет</translation>
     </message>
     <message>
-        <location line="-855"/>
+        <location line="-870" />
         <source>&amp;Unlock Wallet...</source>
         <translation>&amp;Разблокировать бумажник</translation>
     </message>
     <message>
-        <location line="+385"/>
+        <location line="+343" />
         <source>Up to date</source>
         <translation>Синхронизировано</translation>
     </message>
     <message>
-        <location line="+46"/>
-        <location line="+2"/>
+        <location line="+46" />
+        <location line="+2" />
         <source>Catching up...</source>
         <translation>Синхронизируется...</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+76" />
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation>Данная транзакция превышает предельно допустимый размер.  Но Вы можете всё равно совершить её, добавив комиссию в %1, которая отправится тем узлам, которые обработают Вашу транзакцию, и поможет поддержать сеть.  Вы хотите добавить комиссию?</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Confirm transaction fee</source>
         <translation>Подтвердите комиссию</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+27" />
         <source>Sent transaction</source>
         <translation>Исходящая транзакция</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Incoming transaction</source>
         <translation>Входящая транзакция</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Date: %1
 Amount: %2
 Type: %3
@@ -690,39 +690,87 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location line="+112"/>
-        <location line="+15"/>
+        <location line="+112" />
+        <location line="+15" />
         <source>URI handling</source>
         <translation>Обработка URI</translation>
     </message>
     <message>
-        <location line="-15"/>
-        <location line="+15"/>
+        <location line="-15" />
+        <location line="+15" />
         <source>URI can not be parsed! This can be caused by an invalid Netcoin address or malformed URI parameters.</source>
         <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Netcoin или неправильными параметрами URI.</translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+55" />
         <source>Backup Wallet</source>
         <translation>Сделать резервную копию бумажника</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Wallet Data (*.dat)</source>
         <translation>Данные бумажника (*.dat)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Backup Failed</source>
         <translation>Резервное копирование не удалось</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>При попытке сохранения данных бумажника в новое место произошла ошибка.</translation>
     </message>
+    <message>
+        <location line="+8" />
+        <location line="+12" />
+        <location line="+22" />
+        <location line="+13" />
+        <source>Import block chain snapshot</source>
+        <translation>Импорт снимка цепочки блоков</translation>
+    </message>
+    <message>
+        <location line="-46" />
+        <source>Block chain snapshot (*.zip)</source>
+        <translation>Снимок цепочки блоков (*.zip)</translation>
+    </message>
+    <message>
+        <location line="+15" />
+        <source>Snapshot of the block chain up to block &lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Block hash: &lt;tt&gt;%2&lt;/tt&gt;&lt;br&gt;Created: %3&lt;br&gt;Size after unpacking: %4 MB</source>
+        <translation>Снимок цепочки блоков до блока &lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Хеш блока: &lt;tt&gt;%2&lt;/tt&gt;&lt;br&gt;Создан: %3&lt;br&gt;Размер после распаковки: %4 МБ</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>This snapshot is on the list built into this version of NetCoin.</source>
+        <translation>Этот снимок есть в списке, встроенном в эту версию NetCoin.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This snapshot is not on the list built into this version of NetCoin. Only import snapshots from a source you trust.</source>
+        <translation>Этого снимка нет в списке, встроенном в эту версию NetCoin. Импортируйте снимки только из надёжного источника.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Your block chain already has %1 blocks, the snapshot does not make it longer.</source>
+        <translation>В вашей цепочке уже %1 блоков, снимок её не удлинит.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>NetCoin will restart and replace its block chain with the snapshot. The current block chain is moved to a chain-backup folder in the data directory (you can delete it afterwards). The wallet is not changed.</source>
+        <translation>NetCoin перезапустится и заменит цепочку блоков снимком. Текущая цепочка будет перемещена в папку chain-backup в каталоге данных (потом её можно удалить). Кошелёк не изменяется.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Continue?</source>
+        <translation>Продолжить?</translation>
+    </message>
+    <message>
+        <location line="+15" />
+        <source>NetCoin could not be restarted. Start it with -loadsnapshot=%1</source>
+        <translation>Не удалось перезапустить NetCoin. Запустите его с параметром -loadsnapshot=%1</translation>
+    </message>
     <message numerus="yes">
-        <location line="+95"/>
+        <location line="+96" />
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n секунда</numerusform>
@@ -731,7 +779,7 @@ Address: %4
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+4"/>
+        <location line="+4" />
         <source>%n minute(s)</source>
         <translation>
             <numerusform>%n минута</numerusform>
@@ -740,8 +788,8 @@ Address: %4
         </translation>
     </message>
     <message numerus="yes">
-        <location line="-426"/>
-        <location line="+430"/>
+        <location line="-483" />
+        <location line="+487" />
         <source>%n hour(s)</source>
         <translation>
             <numerusform>%n час</numerusform>
@@ -750,13 +798,13 @@ Address: %4
         </translation>
     </message>
     <message>
-        <location line="-454"/>
+        <location line="-511" />
         <source>Processed %1 blocks of transaction history.</source>
         <translation>Обработано блоков истории транзакций: %1.</translation>
     </message>
     <message numerus="yes">
-        <location line="+29"/>
-        <location line="+429"/>
+        <location line="+29" />
+        <location line="+486" />
         <source>%n day(s)</source>
         <translation>
             <numerusform>%n день</numerusform>
@@ -765,8 +813,8 @@ Address: %4
         </translation>
     </message>
     <message numerus="yes">
-        <location line="-425"/>
-        <location line="+7"/>
+        <location line="-482" />
+        <location line="+7" />
         <source>%n week(s)</source>
         <translation>
             <numerusform>%n неделя</numerusform>
@@ -775,12 +823,12 @@ Address: %4
         </translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>%1 and %2</source>
         <translation>%1 и %2</translation>
     </message>
     <message numerus="yes">
-        <location line="+0"/>
+        <location line="+0" />
         <source>%n year(s)</source>
         <translation>
             <numerusform>%n год</numerusform>
@@ -789,47 +837,47 @@ Address: %4
         </translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>%1 behind</source>
         <translation>отставание %1</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+20" />
         <source>Last received block was generated %1 ago.</source>
         <translation>Последний полученный блок создан %1 назад.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Transactions after this will not yet be visible.</source>
         <translation>Более поздние транзакции пока не видны.</translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="+97" />
         <source>Sent S4C transaction</source>
         <translation>Транзакция S4C отправлена</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+148" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/encryptedUnlockedTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=:/toolTip/res/tooltips/encryptedLockedTooltip.png/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+196" />
         <source>Staking.&lt;br&gt;Your weight: %1&lt;br&gt;Network weight: %2&lt;br&gt;Expected time to earn reward: %3</source>
         <translation>Стейкинг.&lt;br&gt;Ваш вес: %1&lt;br&gt;Вес сети: %2&lt;br&gt;Ожидаемое время до награды: %3</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>Not staking</source>
         <translation>Не участвуем в доле</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+114"/>
+        <location filename="../bitcoin.cpp" line="+116" />
         <source>A fatal error occurred. Netcoin can no longer continue safely and will quit.</source>
         <translation>Произошла неисправимая ошибка. Netcoin не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
@@ -837,7 +885,7 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+101"/>
+        <location filename="../clientmodel.cpp" line="+101" />
         <source>Network Alert</source>
         <translation>Сетевая Тревога</translation>
     </message>
@@ -845,223 +893,223 @@ Address: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <location filename="../forms/coincontroldialog.ui" line="+14" />
         <source>Coin Control</source>
         <translation>Выбор входов</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+31" />
         <source>Quantity:</source>
         <translation>Количество:</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location line="+26"/>
+        <location line="+13" />
+        <location line="+26" />
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-13"/>
+        <location line="-13" />
         <source>Bytes:</source>
         <translation>Размер:</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+42" />
         <source>Amount:</source>
         <translation>Сумма:</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location line="+74"/>
-        <location line="+74"/>
-        <location line="+32"/>
+        <location line="+13" />
+        <location line="+74" />
+        <location line="+74" />
+        <location line="+32" />
         <source>0.00 NET</source>
         <translation type="unfinished">123.456 NET {0.00 ?}</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-167" />
         <source>Priority:</source>
         <translation>Приоритет:</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+48" />
         <source>Fee:</source>
         <translation>Комиссия:</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>Low Output:</source>
         <translation>Мелкие входы:</translation>
     </message>
     <message>
-        <location line="+16"/>
-        <location filename="../coincontroldialog.cpp" line="+552"/>
+        <location line="+16" />
+        <location filename="../coincontroldialog.cpp" line="+552" />
         <source>no</source>
         <translation>нет</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>After Fee:</source>
         <translation>С комиссией:</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>Change:</source>
         <translation>Сдача:</translation>
     </message>
     <message>
-        <location line="+239"/>
+        <location line="+239" />
         <source>(un)select all</source>
         <translation>Выбрать все</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Tree mode</source>
         <translation>Дерево</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>List mode</source>
         <translation>Список</translation>
     </message>
     <message>
-        <location line="+218"/>
+        <location line="+218" />
         <source>Amount</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Label</source>
         <translation>Метка</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Confirmations</source>
         <translation>Подтверждения</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Confirmed</source>
         <translation>Подтверждено</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Priority</source>
         <translation>Приоритет</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="-516"/>
+        <location filename="../coincontroldialog.cpp" line="-516" />
         <source>Copy address</source>
         <translation>Копировать адрес</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy label</source>
         <translation>Копировать метку</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+27"/>
+        <location line="+1" />
+        <location line="+27" />
         <source>Copy amount</source>
         <translation>Копировать сумму</translation>
     </message>
     <message>
-        <location line="-26"/>
+        <location line="-26" />
         <source>Copy transaction ID</source>
         <translation>Скопировать ID транзакции</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+25" />
         <source>Copy quantity</source>
         <translation>Копировать количество</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Copy fee</source>
         <translation>Копировать комиссию</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy after fee</source>
         <translation>Копировать с комиссией</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy bytes</source>
         <translation>Копировать объем</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy priority</source>
         <translation>Копировать приоритет</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy low output</source>
         <translation>Копировать малый выход</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy change</source>
         <translation>Копировать сдачу</translation>
     </message>
     <message>
-        <location line="+317"/>
+        <location line="+317" />
         <source>highest</source>
         <translation>наивысший</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>high</source>
         <translation>высокий</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>medium-high</source>
         <translation>выше среднего</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>medium</source>
         <translation>средний</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>low-medium</source>
         <translation>ниже среднего</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>low</source>
         <translation>низкий</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>lowest</source>
         <translation>наименьший</translation>
     </message>
     <message>
-        <location line="+155"/>
+        <location line="+155" />
         <source>DUST</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>yes</source>
         <translation>да</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>This label turns red, if the transaction size is bigger than 10000 bytes.
 
  This means a fee of at least %1 per kb is required.
@@ -1074,10 +1122,10 @@ Address: %4
  Может отличаться на +/- 1 байт на вход.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Transactions with higher priority get more likely into a block.
 
-This label turns red, if the priority is smaller than &quot;medium&quot;.
+This label turns red, if the priority is smaller than "medium".
 
  This means a fee of at least %1 per kb is required.</source>
         <translation>Транзакции с более высоким приоритетом быстрее попадают в блок.
@@ -1087,7 +1135,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
  Это означает, что нужна комиссия не менее %1 за кБ.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>This label turns red, if any recipient receives an amount smaller than %1.
 
  This means a fee of at least %2 is required. 
@@ -1100,7 +1148,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
  Суммы меньше 0,546 минимальной комиссии ретрансляции показываются как DUST.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>This label turns red, if the change is smaller than %1.
 
  This means a fee of at least %2 is required.</source>
@@ -1109,18 +1157,18 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
  Это означает, что нужна комиссия не менее %2.</translation>
     </message>
     <message>
-        <location line="+37"/>
-        <location line="+66"/>
+        <location line="+37" />
+        <location line="+66" />
         <source>(no label)</source>
         <translation>(нет метки)</translation>
     </message>
     <message>
-        <location line="-9"/>
+        <location line="-9" />
         <source>change from %1 (%2)</source>
         <translation>сдача с %1 (%2)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>(change)</source>
         <translation>(сдача)</translation>
     </message>
@@ -1128,67 +1176,67 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>EditAddressDialog</name>
     <message>
-        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <location filename="../forms/editaddressdialog.ui" line="+14" />
         <source>Edit Address</source>
         <translation>Изменить адрес</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>&amp;Label</source>
         <translation>&amp;Метка</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>The label associated with this address book entry</source>
         <translation>Метка, связанная с данной записью</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&amp;Address</source>
         <translation>&amp;Адрес</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
         <translation>Адрес, связанный с данной записью.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <location filename="../editaddressdialog.cpp" line="+20" />
         <source>New receiving address</source>
         <translation>Новый адрес для получения</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>New sending address</source>
         <translation>Новый адрес для отправки</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Edit receiving address</source>
         <translation>Изменение адреса для получения</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Edit sending address</source>
         <translation>Изменение адреса для отправки</translation>
     </message>
     <message>
-        <location line="+76"/>
-        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <location line="+76" />
+        <source>The entered address "%1" is already in the address book.</source>
         <translation>Введённый адрес «%1» уже находится в адресной книге.</translation>
     </message>
     <message>
-        <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Netcoin address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным Netcoin-адресом.</translation>
+        <location line="-5" />
+        <source>The entered address "%1" is not a valid Netcoin address.</source>
+        <translation>Введённый адрес "%1" не является правильным Netcoin-адресом.</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>Could not unlock wallet.</source>
         <translation>Не удается разблокировать бумажник.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>New key generation failed.</source>
         <translation>Генерация нового ключа не удалась.</translation>
     </message>
@@ -1196,22 +1244,22 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>FreespaceChecker</name>
     <message>
-        <location filename="../intro.cpp" line="+60"/>
+        <location filename="../intro.cpp" line="+60" />
         <source>A new data directory will be created.</source>
         <translation>Будет создан новый каталог данных.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+17" />
         <source>Add &lt;code&gt;%1name&lt;/code&gt; if you intend to create a new directory here.</source>
         <translation>Добавьте &lt;code&gt;%1имя&lt;/code&gt;, если хотите создать здесь новый каталог.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Path already exists, and is not a directory.</source>
         <translation>Путь уже существует и не является каталогом.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Cannot create data directory here.</source>
         <translation>Здесь нельзя создать каталог данных.</translation>
     </message>
@@ -1219,43 +1267,43 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+420"/>
-        <location line="+12"/>
+        <location filename="../guiutil.cpp" line="+425" />
+        <location line="+12" />
         <source>Netcoin-Qt</source>
         <translation>Netcoin-Qt</translation>
     </message>
     <message>
-        <location line="-12"/>
+        <location line="-12" />
         <source>version</source>
         <translation>версия</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Usage:</source>
         <translation>Использование:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>command-line options</source>
         <translation>параметры командной строки</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>UI options</source>
         <translation>Опции интерфейса</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Выберите язык, например &quot;de_DE&quot; (по умолчанию: как в системе)</translation>
+        <location line="+1" />
+        <source>Set language, for example "de_DE" (default: system locale)</source>
+        <translation>Выберите язык, например "de_DE" (по умолчанию: как в системе)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Start minimized</source>
         <translation>Запускать свёрнутым</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Show splash screen on startup (default: 1)</source>
         <translation>Показывать сплэш при запуске (по умолчанию: 1)</translation>
     </message>
@@ -1263,47 +1311,47 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>Intro</name>
     <message>
-        <location filename="../forms/intro.ui" line="+14"/>
+        <location filename="../forms/intro.ui" line="+14" />
         <source>Welcome</source>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>Welcome to Netcoin-Qt.</source>
         <translation>Добро пожаловать в Netcoin-Qt.</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Use the default data directory</source>
         <translation>Использовать каталог данных по умолчанию</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Netcoin-Qt will download and store a copy of the NetCoin block chain. At least 1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation>Netcoin-Qt загрузит и сохранит копию цепочки блоков NetCoin. В этом каталоге будет храниться не менее 1 ГБ данных, и со временем объём будет расти.</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>Use a custom data directory:</source>
         <translation>Использовать свой каталог данных:</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>As this is the first time the program is launched, you can choose where Netcoin-Qt will store its data.</source>
         <translation>Программа запускается впервые, поэтому вы можете выбрать, где Netcoin-Qt будет хранить данные.</translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="+101"/>
+        <location filename="../intro.cpp" line="+101" />
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>GB of free space available</source>
         <translation>ГБ свободного места</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>(of %1GB needed)</source>
         <translation>(из необходимых %1 ГБ)</translation>
     </message>
@@ -1311,331 +1359,331 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>NetworkPage</name>
     <message>
-        <location filename="../forms/networkpage.ui" line="+14"/>
+        <location filename="../forms/networkpage.ui" line="+14" />
         <source>Address Book</source>
         <translation type="unfinished">Адресная книга</translation>
     </message>
     <message>
-        <location line="+34"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+        <location line="+34" />
+        <source>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;
 &lt;p&gt;&lt;span&gt;So what is “staking”? Allow us to explain it a little... &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;Satoshi created cryptocurrencies with fairness in mind. He envisioned a decentralized method for providing secure and anonymous storage and transference of currency that focused on the needs of private individuals of the digital era. This system includes the tracking and verification of the integrity of transaction data by utilizing consumer-grade computer components to perform calculations. To reward users utilizing their hardware to complete this work, and simultaneously control inflation, Satoshi integrated a reward system into this process. This is now known as &amp;quot;mining&amp;quot; or Proof of work (POW). At a set time interval, the system generates and releases new coins to miners.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;POS doesn’t require fancy equipment. Users can utilize very simple laptops or desktops it doesn&apos;t use a lot of power and is very easy to set up. You simply install the wallet, place some coins inside it and wait! Now I am sure we can agree that most people can do this very easily.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;POS doesn’t require fancy equipment. Users can utilize very simple laptops or desktops it doesn't use a lot of power and is very easy to set up. You simply install the wallet, place some coins inside it and wait! Now I am sure we can agree that most people can do this very easily.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;Netcoin Developers put it to the community, and asked, is this what we want? The response was a resounding YES! &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;There is nothing special you need to do to get staking, all you need to do is simply place coins in your wallet and wait. That is all.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;The POS system implemented by Netcoin frees users of the need to purchase expensive hardware for their mining operation to remain relevant, but POS offers better security. To provide incentive, we have made a system where users get rewarded more as the amount they stake increases! We are calling it Personal investment rate or PIR for short. PIR works on a sliding scale, so it always benefits you to own more Netcoins! You can set your own interest rate by simply adjusting how many coins you wish to stake!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <location filename="../forms/optionsdialog.ui" line="+14" />
         <source>Options</source>
         <translation>Опции</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&amp;Main</source>
         <translation>&amp;Главная</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
         <translation>Опциональная комиссия за каждый КБ транзакции, которая позволяет быть уверенным, что Ваша транзакция будет обработана быстро.  Большинство транзакций занимают 1КБ.  Рекомендуется комиссия 0.01.</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>Pay transaction &amp;fee</source>
         <translation>Заплатить ко&amp;миссию</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+31" />
         <source>Reserved amount does not participate in staking and is therefore spendable at any time.</source>
         <translation>Зарезервированная сумма не участвует в доле, и поэтому может быть потрачена в любое время.</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>Reserve</source>
         <translation>Зарезервировать</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+34" />
         <source>&amp;Start Netcoin on system login</source>
         <translation>&amp;Запускать Netcoin при входе в систему</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+21" />
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>Map port using &amp;UPnP</source>
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <location line="-33"/>
+        <location line="-33" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Automatically start Netcoin after logging in to the system.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автоматически запускать Netcoin после входа в систему.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+30" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Automatically open the Netcoin client port on the router. This only works when your router supports UPnP and it is enabled.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автоматически открыть порт клиента Netcoin на роутере. Работает, только если роутер поддерживает UPnP и он включён.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Connect to the Netcoin network through a SOCKS proxy (e.g. when connecting through Tor).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Подключаться к сети Netcoin через прокси SOCKS (например, через Tor).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&amp;Connect through SOCKS proxy:</source>
         <translation>&amp;Подключаться через SOCKS прокси:</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>Proxy &amp;IP:</source>
         <translation>&amp;IP Прокси: </translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>IP address of the proxy (e.g. 127.0.0.1)</source>
         <translation>IP-адрес прокси (например 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&amp;Port:</source>
         <translation>По&amp;рт: </translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Порт прокси-сервера (например, 9050)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>SOCKS &amp;Version:</source>
         <translation>&amp;Версия SOCKS:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>SOCKS version of the proxy (e.g. 5)</source>
         <translation>Версия SOCKS-прокси (например, 5)</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+36" />
         <source>&amp;Window</source>
         <translation>&amp;Окно</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Показывать только иконку в системном лотке после сворачивания окна.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Cворачивать в системный лоток вместо панели задач</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Сворачивать вместо закрытия. Если данная опция будет выбрана — приложение закроется только после выбора соответствующего пункта в меню.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>M&amp;inimize on close</source>
         <translation>С&amp;ворачивать при закрытии</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+21" />
         <source>&amp;Display</source>
         <translation>О&amp;тображение</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>User Interface &amp;language:</source>
         <translation>&amp;Язык интерфейса:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The user interface language can be set here. This setting will take effect after restarting Netcoin.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Здесь можно выбрать язык интерфейса. Изменение вступит в силу после перезапуска Netcoin.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+33" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Whether to show Netcoin addresses in the transaction list or not.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Показывать ли адреса Netcoin в списке транзакций.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="-22"/>
+        <location line="-22" />
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Отображать суммы в единицах: </translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Выберите единицу измерения монет при отображении и отправке.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>&amp;Display addresses in transaction list</source>
         <translation>&amp;Показывать адреса в списке транзакций</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Whether to show coin control features or not.</source>
         <translation>Выключает и включает отображение панели выбора входов.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Display coin &amp;control features (experts only!)</source>
         <translation>Управление &amp;входами (только для продвинутых пользователей!)</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+71" />
         <source>&amp;OK</source>
         <translation>О&amp;К</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&amp;Cancel</source>
         <translation>&amp;Отмена</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&amp;Apply</source>
         <translation>&amp;Применить</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+75"/>
+        <location filename="../optionsdialog.cpp" line="+74" />
         <source>default</source>
         <translation>по умолчанию</translation>
     </message>
     <message>
-        <location line="+153"/>
-        <location line="+9"/>
+        <location line="+153" />
+        <location line="+9" />
         <source>Warning</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location line="-9"/>
-        <location line="+9"/>
+        <location line="-9" />
+        <location line="+9" />
         <source>This setting will take effect after restarting Netcoin.</source>
         <translation>Эта настройка вступит в силу после перезапуска Netcoin</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>The supplied proxy address is invalid.</source>
         <translation>Адрес прокси неверен.</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+34" />
         <source>&amp;Combine coins when staking</source>
         <translation>&amp;Объединять монеты при стейкинге</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>When on, a stake also takes in other coins of the same address. All of them are then locked until the stake matures (50 blocks). When off, only the coin that found the stake is locked and the rest of the balance stays spendable.</source>
         <translation>Если включено, стейк забирает и другие монеты того же адреса, и все они блокируются до созревания стейка (50 блоков). Если выключено, блокируется только монета, нашедшая стейк, а остальной баланс остаётся доступным.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Tor onion service</source>
         <translation>Onion-сервис Tor</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Make this node reachable through &amp;Tor (works behind NAT and CGNAT)</source>
         <translation>Сделать этот узел доступным через &amp;Tor (работает за NAT и CGNAT)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Creates a .onion address for this node while Tor is running. Other NetCoin 3.1+ nodes can then connect to you even if your router does not allow incoming connections.</source>
         <translation>Пока работает Tor, узел получает адрес .onion. Другие узлы NetCoin 3.1+ смогут подключаться к вам, даже если роутер не принимает входящие соединения.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Tor &amp;control port:</source>
         <translation>&amp;Порт управления Tor:</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>Tor Browser: 127.0.0.1:9151 (keep it open), Tor service: 127.0.0.1:9051</source>
         <translation>Tor Browser: 127.0.0.1:9151 (не закрывайте его), служба Tor: 127.0.0.1:9051</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>Always connect to these nodes</source>
         <translation>Всегда подключаться к этим узлам</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>IP address, host name or .onion, optionally with :port</source>
         <translation>IP-адрес, имя хоста или .onion, можно с :портом</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>&amp;Add</source>
         <translation>&amp;Добавить</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>&amp;Remove</source>
         <translation>&amp;Удалить</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Saved in netcoin.conf (addnode=). New nodes are connected right away; Tor settings take effect after restarting NetCoin.</source>
         <translation>Сохраняется в netcoin.conf (addnode=). К новым узлам кошелёк подключается сразу; настройки Tor вступают в силу после перезапуска NetCoin.</translation>
     </message>
     <message>
-        <location line="+65"/>
-        <source>&quot;%1&quot; is not a valid node address.</source>
+        <location line="+65" />
+        <source>"%1" is not a valid node address.</source>
         <translation>«%1» — неверный адрес узла.</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Tor is running but not connected to the Tor network, so %1 cannot be reached. In the Tor Browser click &quot;Connect&quot;.</source>
+        <location line="+22" />
+        <source>Tor is running but not connected to the Tor network, so %1 cannot be reached. In the Tor Browser click "Connect".</source>
         <translation>Tor запущен, но не подключён к сети Tor, поэтому %1 недоступен. В Tor Browser нажмите «Подключиться».</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>This node is reachable as %1</source>
         <translation>Узел доступен по адресу %1</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>No onion address yet: Tor is not running or not reachable (see debug.log).</source>
         <translation>Адреса .onion пока нет: Tor не запущен или недоступен (см. debug.log).</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Tor onion service is switched off.</source>
         <translation>Onion-сервис Tor выключен.</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Cannot save the settings to netcoin.conf: %1</source>
         <translation>Не удалось сохранить настройки в netcoin.conf: %1</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Tor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>The Tor settings will take effect after restarting NetCoin.</source>
         <translation>Настройки Tor вступят в силу после перезапуска NetCoin.</translation>
     </message>
@@ -1643,239 +1691,239 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>OverviewPage</name>
     <message>
-        <location filename="../forms/overviewpage.ui" line="+26"/>
+        <location filename="../forms/overviewpage.ui" line="+26" />
         <source>Form</source>
         <translation>Форма</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+33" />
         <source>10</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>100</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>1000</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>all (HEAVY)</source>
         <translation>все (МЕДЛЕННО)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>pow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>disable chart</source>
         <translation>скрыть график</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+50" />
         <source>Unlock</source>
         <translation>Разблокировать</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>S4C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+93" />
         <source>POS Statistics</source>
         <translation>Статистика PoS</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/stakingTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+12" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/stakingTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+40" />
         <source>Recent Transactions</source>
         <translation>Последние транзакции</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>(Out of Sync)</source>
         <translation>(нет синхронизации)</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+53" />
         <source>Number of Transactions:</source>
         <translation>Число транзакций:</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location line="+404"/>
-        <location line="+41"/>
-        <location line="+60"/>
-        <location line="+64"/>
-        <location line="+25"/>
+        <location line="+13" />
+        <location line="+404" />
+        <location line="+41" />
+        <location line="+60" />
+        <location line="+64" />
+        <location line="+25" />
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-569"/>
+        <location line="-569" />
         <source>Network Statistics</source>
         <translation>Статистика сети</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>0.0000</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0.0002&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>PoS difficulty</source>
         <translation>Сложность PoS</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pow difficulty&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сложность PoW&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Last block time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Время последнего блока&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0 KH/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Net Hashrate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Хешрейт сети&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0 MH/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Total Coin Volume&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Всего монет&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Connections&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Соединения&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+19"/>
-        <location line="+64"/>
+        <location line="+19" />
+        <location line="+64" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;250&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-48" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Height&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Высота блока&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;PoW Block Reward&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Награда за блок PoW&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;00000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+47" />
         <source>Wallet Breakdown</source>
         <translation>Состав кошелька</translation>
     </message>
     <message>
-        <location line="+40"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/maturingTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+40" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/maturingTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+6"/>
-        <location line="+28"/>
+        <location line="+6" />
+        <location line="+28" />
         <source>0 </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-6"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/spendableTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="-6" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/spendableTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+28"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/unconfirmedTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+28" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/unconfirmedTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+25" />
         <source>Maturing Stake:</source>
         <translation>Созревающий стейк:</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+98" />
         <source>checkpoint block</source>
         <translation>контрольный блок</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+35" />
         <source>Interest earned:</source>
         <translation>Заработано процентов:</translation>
     </message>
     <message>
-        <location line="+32"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/immatureTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+32" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/immatureTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-51"/>
+        <location line="-51" />
         <source>Unconfirmed:</source>
         <translation>Не подтверждено:</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+76" />
         <source>Spendable:</source>
         <translation>Доступно:</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-130" />
         <source>Immature:</source>
         <translation>Незрелые:</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-16" />
         <source>Total:</source>
         <translation>Итого:</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+159"/>
+        <location filename="../overviewpage.cpp" line="+159" />
         <source>out of sync</source>
         <translation>не синхронизировано</translation>
     </message>
     <message numerus="yes">
-        <location line="+85"/>
+        <location line="+89" />
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n секунда</numerusform>
@@ -1884,7 +1932,7 @@ p, li { white-space: pre-wrap; }
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+4"/>
+        <location line="+4" />
         <source>%n minute(s)</source>
         <translation>
             <numerusform>%n минута</numerusform>
@@ -1893,7 +1941,7 @@ p, li { white-space: pre-wrap; }
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+4"/>
+        <location line="+4" />
         <source>%n hour(s)</source>
         <translation>
             <numerusform>%n час</numerusform>
@@ -1902,7 +1950,7 @@ p, li { white-space: pre-wrap; }
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+4"/>
+        <location line="+4" />
         <source>%n day(s)</source>
         <translation>
             <numerusform>%n день</numerusform>
@@ -1911,32 +1959,32 @@ p, li { white-space: pre-wrap; }
         </translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Стейкинг.&lt;br&gt;Ваш вес: %1&lt;br&gt;Вес сети: %2&lt;br&gt;Ожидаемое время до награды: %3</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Not staking because your wallet is locked,&lt;br&gt; please unlock for staking.</source>
         <translation>Стейкинг не идёт: кошелёк заблокирован,&lt;br&gt; разблокируйте его для стейкинга.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Not staking because your wallet is offline,&lt;br&gt; please wait for a connection...</source>
         <translation>Стейкинг не идёт: кошелёк не в сети,&lt;br&gt; дождитесь подключения...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Not staking because your wallet is syncing,&lt;br&gt; please wait for this process to end...</source>
         <translation>Стейкинг не идёт: кошелёк синхронизируется,&lt;br&gt; дождитесь окончания...</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Not staking because you don&apos;t have mature coins...</source>
+        <location line="+2" />
+        <source>Not staking because you don't have mature coins...</source>
         <translation>Стейкинг не идёт: нет созревших монет...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Not staking</source>
         <translation>Стейкинг не идёт</translation>
     </message>
@@ -1944,70 +1992,70 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../intro.cpp" line="-32"/>
+        <location filename="../intro.cpp" line="-32" />
         <source>Netcoin</source>
         <translation type="unfinished">Netcoin</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
+        <location line="+1" />
+        <source>Error: Specified data directory "%1" can not be created.</source>
         <translation>Ошибка: невозможно создать каталог данных «%1».</translation>
     </message>
 </context>
 <context>
     <name>QRCodeDialog</name>
     <message>
-        <location filename="../forms/qrcodedialog.ui" line="+14"/>
+        <location filename="../forms/qrcodedialog.ui" line="+14" />
         <source>QR Code Dialog</source>
         <translation>Диалог QR-кода</translation>
     </message>
     <message>
-        <location line="+587"/>
+        <location line="+587" />
         <source>Request Payment</source>
         <translation>Запросить платёж</translation>
     </message>
     <message>
-        <location line="-520"/>
+        <location line="-520" />
         <source>Amount:</source>
         <translation>Количество:</translation>
     </message>
     <message>
-        <location line="+477"/>
+        <location line="+477" />
         <source>Label:</source>
         <translation>Метка:</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Message:</source>
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+143" />
         <source>&amp;Save As...</source>
         <translation>&amp;Сохранить как...</translation>
     </message>
     <message>
-        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <location filename="../qrcodedialog.cpp" line="+62" />
         <source>Error encoding URI into QR Code.</source>
         <translation>Ошибка кодирования URI в QR-код</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+40" />
         <source>The entered amount is invalid, please check.</source>
         <translation>Введено неверное количество, проверьте ещё раз.</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>Получившийся URI слишком длинный, попробуйте сократить текст метки / сообщения.</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+25" />
         <source>Save QR Code</source>
         <translation>Сохранить QR-код</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>PNG Images (*.png)</source>
         <translation>PNG Изображения (*.png)</translation>
     </message>
@@ -2015,139 +2063,139 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>RPCConsole</name>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="+136"/>
+        <location filename="../forms/rpcconsole.ui" line="+136" />
         <source>Client name</source>
         <translation>Имя клиента</translation>
     </message>
     <message>
-        <location line="-83"/>
-        <location line="+23"/>
-        <location line="+16"/>
-        <location line="+54"/>
-        <location line="+23"/>
-        <location line="+16"/>
-        <location line="+40"/>
-        <location line="+23"/>
+        <location line="-83" />
+        <location line="+23" />
+        <location line="+16" />
+        <location line="+54" />
+        <location line="+23" />
+        <location line="+16" />
+        <location line="+40" />
+        <location line="+23" />
         <source>N/A</source>
         <translation>Н/Д</translation>
     </message>
     <message>
-        <location line="-126"/>
+        <location line="-126" />
         <source>Client version</source>
         <translation>Версия клиента</translation>
     </message>
     <message>
-        <location line="-95"/>
+        <location line="-95" />
         <source>&amp;Information</source>
         <translation>&amp;Информация</translation>
     </message>
     <message>
-        <location line="+78"/>
+        <location line="+78" />
         <source>Using OpenSSL version</source>
         <translation>Используется версия OpenSSL</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-62" />
         <source>Startup time</source>
         <translation>Время запуска</translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="-29" />
         <source>NetCoin - Debug window</source>
         <translation>NetCoin - окно отладки</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+52" />
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location line="+63"/>
+        <location line="+63" />
         <source>Number of connections</source>
         <translation>Число подключений</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+30" />
         <source>NetCoin Core</source>
         <translation>NetCoin Core</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+39" />
         <source>On testnet</source>
         <translation>В тестовой сети</translation>
     </message>
     <message>
-        <location line="+221"/>
+        <location line="+221" />
         <source>Show the NetCoin-Qt help message to get a list with possible NetCoin command-line options.</source>
         <translation>Показать справку NetCoin-Qt со списком параметров командной строки.</translation>
     </message>
     <message>
-        <location line="-383"/>
+        <location line="-383" />
         <source>Block chain</source>
         <translation>Цепь блоков</translation>
     </message>
     <message>
-        <location line="+179"/>
+        <location line="+179" />
         <source>Current number of blocks</source>
         <translation>Текущее число блоков</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Last block time</source>
         <translation>Время последнего блока</translation>
     </message>
     <message>
-        <location line="+161"/>
+        <location line="+161" />
         <source>Open the NetCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Открыть файл журнала отладки NetCoin из текущего каталога данных. Для больших файлов это может занять несколько секунд.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>&amp;Open</source>
         <translation>&amp;Открыть</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>Command-line options</source>
         <translation>Параметры командной строки</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&amp;Show</source>
         <translation>&amp;Показать</translation>
     </message>
     <message>
-        <location line="+155"/>
+        <location line="+155" />
         <source>&amp;Console</source>
         <translation>Консоль</translation>
     </message>
     <message>
-        <location line="-462"/>
+        <location line="-462" />
         <source>Build date</source>
         <translation>Дата сборки</translation>
     </message>
     <message>
-        <location line="+277"/>
+        <location line="+277" />
         <source>Debug log file</source>
         <translation>Отладочный лог-файл</translation>
     </message>
     <message>
-        <location line="+237"/>
+        <location line="+237" />
         <source>Clear console</source>
         <translation>Очистить консоль</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="+328"/>
+        <location filename="../rpcconsole.cpp" line="+327" />
         <source>Welcome to the Netcoin RPC console.</source>
         <translation>Добро пожаловать в RPC-консоль Netcoin.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Используйте стрелки вверх и вниз для просмотра истории и &lt;b&gt;Ctrl-L&lt;/b&gt; для очистки экрана.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Напишите &lt;b&gt;help&lt;/b&gt; для просмотра доступных команд.</translation>
     </message>
@@ -2155,253 +2203,253 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>SendCoinsDialog</name>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="+17"/>
-        <location filename="../sendcoinsdialog.cpp" line="+186"/>
-        <location line="+5"/>
-        <location line="+5"/>
-        <location line="+5"/>
-        <location line="+6"/>
-        <location line="+5"/>
-        <location line="+5"/>
+        <location filename="../forms/sendcoinsdialog.ui" line="+17" />
+        <location filename="../sendcoinsdialog.cpp" line="+186" />
+        <location line="+5" />
+        <location line="+5" />
+        <location line="+5" />
+        <location line="+6" />
+        <location line="+5" />
+        <location line="+5" />
         <source>Send Coins</source>
         <translation>Отправка</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+50" />
         <source>Coin Control Features</source>
         <translation>Выбор входов</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+76" />
         <source>Inputs...</source>
         <translation>Входы...</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>automatically selected</source>
         <translation>автоматический выбор</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Insufficient funds!</source>
         <translation>Недостаточно средств!</translation>
     </message>
     <message>
-        <location line="+356"/>
+        <location line="+356" />
         <source>Quantity:</source>
         <translation>Количество:</translation>
     </message>
     <message>
-        <location line="+82"/>
-        <location line="+98"/>
-        <location line="+98"/>
-        <location line="+38"/>
+        <location line="+82" />
+        <location line="+98" />
+        <location line="+98" />
+        <location line="+38" />
         <source>0.00 MINT</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-19"/>
+        <location line="-19" />
         <source>Change:</source>
         <translation>Сдача:</translation>
     </message>
     <message>
-        <location line="+363"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/sendToMultipleRecipientsTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+363" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/sendToMultipleRecipientsTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/removeAllTransactionFieldsTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+23" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/removeAllTransactionFieldsTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+47" />
         <source>123.456 MINT</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+260"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/confirmSendActionTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+260" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/confirmSendActionTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-1012"/>
-        <location line="+44"/>
+        <location line="-1012" />
+        <location line="+44" />
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-63"/>
+        <location line="-63" />
         <source>Bytes:</source>
         <translation>Байт:</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+101" />
         <source>Amount:</source>
         <translation>Сумма:</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+41" />
         <source>Priority:</source>
         <translation>Приоритет:</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>medium</source>
         <translation>средний</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+38" />
         <source>Fee:</source>
         <translation>Комиссия:</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+41" />
         <source>Low Output:</source>
         <translation>Малый выход:</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>no</source>
         <translation>нет</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+38" />
         <source>After Fee:</source>
         <translation>После комиссии:</translation>
     </message>
     <message>
-        <location line="-690"/>
+        <location line="-690" />
         <source>custom change address</source>
         <translation>адрес для сдачи</translation>
     </message>
     <message>
-        <location line="+1097"/>
+        <location line="+1097" />
         <source>Add &amp;Recipient</source>
         <translation>&amp;Добавить получателя</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Clear &amp;All</source>
         <translation>Очистить &amp;всё</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+28" />
         <source>Balance:</source>
         <translation>Баланс:</translation>
     </message>
     <message>
-        <location line="+282"/>
+        <location line="+282" />
         <source>S&amp;end</source>
         <translation>&amp;Отправить</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-160"/>
+        <location filename="../sendcoinsdialog.cpp" line="-160" />
         <source>Copy quantity</source>
         <translation>Копировать количество</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy amount</source>
         <translation>Копировать сумму</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy fee</source>
         <translation>Копировать комиссию</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy after fee</source>
         <translation>Копировать сумму после комиссии</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy bytes</source>
         <translation>Копировать байты</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy priority</source>
         <translation>Копировать приоритет</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy low output</source>
         <translation>Копировать малый выход</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy change</source>
         <translation>Копировать сдачу</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+86" />
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; адресату %2 (%3)</translation>
     </message>
     <message>
-        <location line="-109"/>
+        <location line="-109" />
         <source>Enter a Netcoin address (e.g. nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</source>
         <translation>Введите адрес Netcoin (например, nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</translation>
     </message>
     <message>
-        <location line="+116"/>
+        <location line="+116" />
         <source>Are you sure you want to send %1?</source>
         <translation>Вы уверены, что хотите отправить %1?</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source> and </source>
         <translation> и </translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+30" />
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Адрес получателя неверный, пожалуйста, перепроверьте.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>The amount to pay must be larger than 0.</source>
         <translation>Количество монет для отправки должно быть больше 0.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>The amount exceeds your balance.</source>
         <translation>Количество отправляемых монет превышает Ваш баланс</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Сумма превысит Ваш баланс, если комиссия в размере %1 будет добавлена к транзакции</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation>Обнаружен дублирующийся адрес. Отправка на один и тот же адрес возможна только один раз за одну операцию отправки</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Error: Transaction creation failed.</source>
         <translation>Ошибка: не удалось создать транзакцию.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла wallet.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
     </message>
     <message>
-        <location line="+251"/>
+        <location line="+251" />
         <source>WARNING: Invalid Netcoin address</source>
         <translation>ВНИМАНИЕ: неверный адрес Netcoin</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>(no label)</source>
         <translation>(нет метки)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>WARNING: unknown change address</source>
         <translation>ПРЕДУПРЕЖДЕНИЕ: неизвестный адрес для сдачи</translation>
     </message>
@@ -2409,67 +2457,67 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+20"/>
+        <location filename="../forms/sendcoinsentry.ui" line="+20" />
         <source>Form</source>
         <translation>Форма</translation>
     </message>
     <message>
-        <location line="+30"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/sendToAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+30" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/sendToAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/removeRecipientTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+16" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/removeRecipientTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+17"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/pasteAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+17" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/pasteAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/chooseAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+20" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/chooseAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+36"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/sendToAddressLabelTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+36" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/sendToAddressLabelTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>A&amp;mount:</source>
         <translation>Ко&amp;личество:</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-118" />
         <source>Pay &amp;To:</source>
         <translation>Полу&amp;чатель:</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <location filename="../sendcoinsentry.cpp" line="+26" />
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Введите метку для данного адреса (для добавления в адресную книгу)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Enter a Netcoin address (e.g. nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</source>
         <translation>Введите адрес Netcoin (например, nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</translation>
     </message>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+89"/>
+        <location filename="../forms/sendcoinsentry.ui" line="+89" />
         <source>&amp;Label:</source>
         <translation>&amp;Метка:</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="-7" />
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-20" />
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
@@ -2477,448 +2525,452 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>ShoppingPage</name>
     <message>
-        <location filename="../forms/shoppingpage.ui" line="+35"/>
+        <location filename="../forms/shoppingpage.ui" line="+35" />
         <source>Address Book</source>
         <translation>Адресная книга</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+94" />
         <source>exchanges</source>
         <translation>биржи</translation>
     </message>
     <message>
-        <location line="+81"/>
-        <location line="+460"/>
-        <location line="+2835"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/exchangeTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+81" />
+        <location line="+460" />
+        <location line="+2835" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/exchangeTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-3231"/>
-        <location line="+32"/>
-        <location line="+233"/>
-        <location line="+2916"/>
-        <location line="+19"/>
-        <location line="+304"/>
-        <location line="+19"/>
+        <location line="-3231" />
+        <location line="+32" />
+        <location line="+233" />
+        <location line="+2916" />
+        <location line="+19" />
+        <location line="+304" />
+        <location line="+19" />
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-3382"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/res/images/HeaderText/PurchaseNetcoins.png&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="-3382" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;img src=":/images/res/images/HeaderText/PurchaseNetcoins.png"/&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+89"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;suggest an exchange admin@netcoin.io or discord.me/netcoin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;предложите биржу: admin@netcoin.io или discord.me/netcoin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+89" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;suggest an exchange admin@netcoin.io or discord.me/netcoin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;предложите биржу: admin@netcoin.io или discord.me/netcoin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+241"/>
+        <location line="+241" />
         <source>Services</source>
         <translation>Сервисы</translation>
     </message>
     <message>
-        <location line="+104"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/res/images/HeaderText/SpendNetcoins.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+104" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;img src=":/images/res/images/HeaderText/SpendNetcoins.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+129"/>
-        <location line="+54"/>
-        <location line="+54"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <location line="+41"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/coinpayments2Tooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+129" />
+        <location line="+54" />
+        <location line="+54" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <location line="+41" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/coinpayments2Tooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+37"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;Are you a store or service owner?&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;If you would like to accept Netcoin at your store or service please get in touch at support@netcoin.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;У вас магазин или сервис?&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;Если хотите принимать Netcoin, напишите на support@netcoin.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+37" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span&gt;Are you a store or service owner?&lt;/span&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;span&gt;If you would like to accept Netcoin at your store or service please get in touch at support@netcoin.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span&gt;У вас магазин или сервис?&lt;/span&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;span&gt;Если хотите принимать Netcoin, напишите на support@netcoin.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+94" />
         <source>Development</source>
         <translation>Разработка</translation>
     </message>
     <message>
-        <location line="+53"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To keep up with development keep an eye out on the &lt;a href=&quot;https://github.com/netcoinfoundation/netcoin&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffaa00;&quot;&gt;github pages&lt;/span&gt;&lt;/a&gt; for updates.&lt;/p&gt;&lt;p&gt;If you wish to speak with a member of the team come to &lt;a href=&quot;https://discord.me/netcoin&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffaa00;&quot;&gt;discord.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;from time to time we may need to test out new features for this we run a testnet if you would wish to participate check the forums/discord/website for the unstable releases.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Следить за разработкой можно на &lt;a href=&quot;https://github.com/netcoinfoundation/netcoin&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffaa00;&quot;&gt;страницах GitHub&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Чтобы поговорить с командой, заходите в &lt;a href=&quot;https://discord.me/netcoin&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffaa00;&quot;&gt;Discord.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Иногда мы проверяем новые функции в тестовой сети. Если хотите участвовать, ищите тестовые версии на форуме, в Discord или на сайте.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+53" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To keep up with development keep an eye out on the &lt;a href="https://github.com/netcoinfoundation/netcoin"&gt;&lt;span style=" text-decoration: underline; color:#ffaa00;"&gt;github pages&lt;/span&gt;&lt;/a&gt; for updates.&lt;/p&gt;&lt;p&gt;If you wish to speak with a member of the team come to &lt;a href="https://discord.me/netcoin"&gt;&lt;span style=" text-decoration: underline; color:#ffaa00;"&gt;discord.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;from time to time we may need to test out new features for this we run a testnet if you would wish to participate check the forums/discord/website for the unstable releases.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Следить за разработкой можно на &lt;a href="https://github.com/netcoinfoundation/netcoin"&gt;&lt;span style=" text-decoration: underline; color:#ffaa00;"&gt;страницах GitHub&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Чтобы поговорить с командой, заходите в &lt;a href="https://discord.me/netcoin"&gt;&lt;span style=" text-decoration: underline; color:#ffaa00;"&gt;Discord.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Иногда мы проверяем новые функции в тестовой сети. Если хотите участвовать, ищите тестовые версии на форуме, в Discord или на сайте.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+54" />
         <source>Check Progress</source>
         <translation>Проверить ход</translation>
     </message>
     <message>
-        <location line="+197"/>
+        <location line="+197" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Below is the donation adress of the Netcoin Foundation. All donations are welcome and help maintaining Netcoin and further development. For more information about the Netcoin Foundation please visit netcoinfoundation.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Ниже указан адрес для пожертвований фонду Netcoin Foundation. Любые пожертвования помогают поддерживать и развивать Netcoin. Подробнее о фонде: netcoinfoundation.io&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+491"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffaa00;&quot;&gt;n57TyDv2D3sjNqkRpk26HSg9Ftmx8ZXMTm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+491" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-size:14pt; color:#ffaa00;"&gt;n57TyDv2D3sjNqkRpk26HSg9Ftmx8ZXMTm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/res/images/HeaderText/Development.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+26" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;img src=":/images/res/images/HeaderText/Development.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+20" />
         <source>Useful Links</source>
         <translation>Полезные ссылки</translation>
     </message>
     <message>
-        <location line="+144"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/infositeTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+144" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/infositeTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+55"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/forumTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+55" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/forumTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+29"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/foundationsiteTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+29" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/foundationsiteTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+88"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/res/images/HeaderText/UsefulLinks.png&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;Here are some other links you may find useful.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/res/images/HeaderText/UsefulLinks.png&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span&gt;Другие полезные ссылки.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+88" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;img src=":/images/res/images/HeaderText/UsefulLinks.png"/&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;span&gt;Here are some other links you may find useful.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;img src=":/images/res/images/HeaderText/UsefulLinks.png"/&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;span&gt;Другие полезные ссылки.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+22" />
         <source>Block Explorer</source>
         <translation>Обозреватель блоков</translation>
     </message>
     <message>
-        <location line="+62"/>
+        <location line="+62" />
         <source>Blocks</source>
         <translation>Блоки</translation>
     </message>
     <message>
-        <location line="+47"/>
-        <location line="+343"/>
+        <location line="+47" />
+        <location line="+343" />
         <source>Search</source>
         <translation>Поиск</translation>
     </message>
     <message>
-        <location line="-326"/>
+        <location line="-326" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Hash:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Хеш блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <location line="+53"/>
-        <location line="+87"/>
-        <location line="+29"/>
+        <location line="+10" />
+        <location line="+53" />
+        <location line="+87" />
+        <location line="+29" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-159"/>
+        <location line="-159" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block nBits:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;nBits блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0000 KH/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block nNonce:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;nNonce блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+35"/>
-        <location line="+31"/>
+        <location line="+35" />
+        <location line="+31" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0x0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Height:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Высота блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Merkle:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Меркл блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Timestamp:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Время блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+20" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Hashrate:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Хешрейт блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+120" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Block Difficulty:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Сложность блока:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>Transactions</source>
         <translation>Транзакции</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Enter your Transaction ID</source>
         <comment>Transaction ID</comment>
         <extracomment>Transaction ID</extracomment>
         <translation>Введите ID транзакции</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+27" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Transaction ID:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;ID транзакции:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Value out:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Сумма выходов:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Fees:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Комиссии:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Outputs:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Выходы:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Inputs:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Входы:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+53" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Netcoin Block Explorer &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Обозреватель блоков Netcoin &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Stake Pools</source>
         <translation>Пулы стейкинга</translation>
     </message>
     <message>
-        <location line="+24"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;own a pool wish to have it promoted here??&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;If you would like to add your pool here email support@netcoin.io &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;with subject heading &amp;quot;pool slot&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;У вас есть пул и вы хотите разместить его здесь?&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Чтобы добавить пул, напишите на support@netcoin.io &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;с темой &amp;quot;pool slot&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+24" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;own a pool wish to have it promoted here?&lt;/p&gt;&lt;p align="center"&gt;If you would like to add your pool here email support@netcoin.io &lt;/p&gt;&lt;p align="center"&gt;with subject heading &amp;quot;pool slot&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+121"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;own a pool wish to have it promoted here??&lt;/p&gt;&lt;p align="center"&gt;If you would like to add your pool here email support@netcoin.io &lt;/p&gt;&lt;p align="center"&gt;with subject heading &amp;quot;pool slot&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;У вас есть пул и вы хотите разместить его здесь?&lt;/p&gt;&lt;p align="center"&gt;Чтобы добавить пул, напишите на support@netcoin.io &lt;/p&gt;&lt;p align="center"&gt;с темой &amp;quot;pool slot&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location line="+121" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
+        <location filename="../forms/signverifymessagedialog.ui" line="+14" />
         <source>Signatures - Sign / Verify a Message</source>
         <translation>Подписи - подписать/проверить сообщение</translation>
     </message>
     <message>
-        <location line="+434"/>
-        <location line="+128"/>
+        <location line="+434" />
+        <location line="+128" />
         <source>&amp;Sign Message</source>
         <translation>&amp;Подписать сообщение</translation>
     </message>
     <message>
-        <location line="-122"/>
+        <location line="-122" />
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Вы можете подписывать сообщения своими адресами, чтобы доказать владение ими. Будьте осторожны, не подписывайте что-то неопределённое, так как фишинговые атаки могут обманным путём заставить вас подписать нежелательные сообщения. Подписывайте только те сообщения, с которыми вы согласны вплоть до мелочей.</translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/signMessageDialogTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+18" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/signMessageDialogTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+10"/>
-        <location line="+201"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/chooseAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+10" />
+        <location line="+201" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/chooseAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-178"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/pasteAddressTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="-178" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/pasteAddressTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+25"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/theMessageToSign.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+25" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/theMessageToSign.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+19"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/copyMessageTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+19" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/copyMessageTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+24"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/signThisMessageTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+24" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/signThisMessageTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+17"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/resetSignMessageFieldsTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+17" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/resetSignMessageFieldsTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+83"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/verifyAddyTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+83" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/verifyAddyTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+47"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/verifyMessageTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+47" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/verifyMessageTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+17"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/toolTip/res/tooltips/clearAllVerifyTooltip.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <location line="+17" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=":/toolTip/res/tooltips/clearAllVerifyTooltip.png"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-242"/>
-        <location line="+201"/>
+        <location line="-242" />
+        <location line="+201" />
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-178"/>
+        <location line="-178" />
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <location line="+75"/>
-        <location line="+147"/>
+        <location line="+75" />
+        <location line="+147" />
         <source>Clear &amp;All</source>
         <translation>Очистить &amp;всё</translation>
     </message>
     <message>
-        <location line="-94"/>
-        <location line="+77"/>
+        <location line="-94" />
+        <location line="+77" />
         <source>&amp;Verify Message</source>
         <translation>&amp;Проверить сообщение</translation>
     </message>
     <message>
-        <location line="-71"/>
+        <location line="-71" />
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Введите ниже адрес для подписи, сообщение (убедитесь, что переводы строк, пробелы, табы и т.п. в точности скопированы) и подпись, чтобы проверить сообщение. Убедитесь, что не скопировали лишнего в подпись, по сравнению с самим подписываемым сообщением, чтобы не стать жертвой атаки &quot;man-in-the-middle&quot;.</translation>
+        <translation>Введите ниже адрес для подписи, сообщение (убедитесь, что переводы строк, пробелы, табы и т.п. в точности скопированы) и подпись, чтобы проверить сообщение. Убедитесь, что не скопировали лишнего в подпись, по сравнению с самим подписываемым сообщением, чтобы не стать жертвой атаки "man-in-the-middle".</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+27"/>
-        <location line="+3"/>
+        <location filename="../signverifymessagedialog.cpp" line="+27" />
+        <location line="+3" />
         <source>Enter a Netcoin address (e.g. nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</source>
         <translation>Введите адрес Netcoin (например, nBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</translation>
     </message>
     <message>
-        <location line="-2"/>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Нажмите &quot;Подписать сообщение&quot; для создания подписи</translation>
+        <location line="-2" />
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Нажмите "Подписать сообщение" для создания подписи</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Enter Netcoin signature</source>
         <translation>Введите подпись Netcoin</translation>
     </message>
     <message>
-        <location line="+82"/>
-        <location line="+81"/>
+        <location line="+82" />
+        <location line="+81" />
         <source>The entered address is invalid.</source>
         <translation>Введённый адрес неверен</translation>
     </message>
     <message>
-        <location line="-81"/>
-        <location line="+8"/>
-        <location line="+73"/>
-        <location line="+8"/>
+        <location line="-81" />
+        <location line="+8" />
+        <location line="+73" />
+        <location line="+8" />
         <source>Please check the address and try again.</source>
         <translation>Пожалуйста, проверьте адрес и попробуйте ещё раз.</translation>
     </message>
     <message>
-        <location line="-81"/>
-        <location line="+81"/>
+        <location line="-81" />
+        <location line="+81" />
         <source>The entered address does not refer to a key.</source>
         <translation>Введённый адрес не связан с ключом</translation>
     </message>
     <message>
-        <location line="-73"/>
+        <location line="-73" />
         <source>Wallet unlock was cancelled.</source>
         <translation>Разблокировка бумажника была отменена.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Private key for the entered address is not available.</source>
         <translation>Для введённого адреса недоступен закрытый ключ</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>Message signing failed.</source>
         <translation>Не удалось подписать сообщение</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Message signed.</source>
         <translation>Сообщение подписано</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+59" />
         <source>The signature could not be decoded.</source>
         <translation>Подпись не может быть раскодирована.</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+15"/>
+        <location line="+0" />
+        <location line="+15" />
         <source>Please check the signature and try again.</source>
         <translation>Пожалуйста, проверьте подпись и попробуйте ещё раз.</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>The signature did not match the message digest.</source>
         <translation>Подпись не соответствует отпечатку сообщения.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Message verification failed.</source>
         <translation>Проверка сообщения не удалась.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Message verified.</source>
         <translation>Сообщение проверено.</translation>
     </message>
@@ -2926,18 +2978,18 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>SplitCoinsDialog</name>
     <message>
-        <location filename="../splitcoinsdialog.cpp" line="+27"/>
-        <location line="+96"/>
-        <location line="+16"/>
-        <location line="+5"/>
-        <location line="+22"/>
-        <location line="+5"/>
-        <location line="+7"/>
+        <location filename="../splitcoinsdialog.cpp" line="+27" />
+        <location line="+96" />
+        <location line="+16" />
+        <location line="+5" />
+        <location line="+22" />
+        <location line="+5" />
+        <location line="+7" />
         <source>Split coins</source>
         <translation>Разделить монеты</translation>
     </message>
     <message>
-        <location line="-147"/>
+        <location line="-147" />
         <source>A stake locks the coin it uses, together with the reward, until it matures (50 blocks). If your whole balance is one coin, nothing can be sent during that time.
 
 This splits your spendable balance into several equal coins on new addresses of this wallet. A stake then locks only one of them, the others stay spendable and keep staking. The coins do not leave your wallet; only the network fee is paid.</source>
@@ -2946,62 +2998,62 @@ This splits your spendable balance into several equal coins on new addresses of 
 Эта функция делит доступный баланс на несколько равных монет на новых адресах этого кошелька. Тогда стейк блокирует только одну из них, а остальные остаются доступными и продолжают стейкать. Монеты не покидают кошелёк; оплачивается только комиссия сети.</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>Number of &amp;coins:</source>
         <translation>&amp;Количество монет:</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>&amp;Split</source>
         <translation>&amp;Разделить</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>&amp;Close</source>
         <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+39" />
         <source>Spendable now: %1</source>
         <translation>Доступно сейчас: %1</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Spendable coins in the wallet now: %1</source>
         <translation>Доступных монет в кошельке: %1</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Each coin: %1. The network fee is at most about %2; what is left over comes back as one more small coin.</source>
         <translation>Каждая монета: %1. Комиссия сети составит не более %2; остаток вернётся ещё одной небольшой монетой.</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>The spendable balance is too small to split into this many coins.</source>
         <translation>Доступный баланс слишком мал, чтобы разделить его на столько монет.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>Split %1 into %2 coins of %3 on new addresses of this wallet?</source>
         <translation>Разделить %1 на %2 монет по %3 на новых адресах этого кошелька?</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+20" />
         <source>Could not create a new address.</source>
         <translation>Не удалось создать новый адрес.</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Done. The new coins can be used for staking and sending once the transaction is confirmed.</source>
         <translation>Готово. Новые монеты можно будет использовать для стейкинга и отправки после подтверждения транзакции.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>С учётом комиссии %1 сумма превышает баланс.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Error: Transaction creation failed.</source>
         <translation>Ошибка: не удалось создать транзакцию.</translation>
     </message>
@@ -3009,212 +3061,212 @@ This splits your spendable balance into several equal coins on new addresses of 
 <context>
     <name>StakeForCharityDialog</name>
     <message>
-        <location filename="../forms/charitydialog.ui" line="+17"/>
+        <location filename="../forms/charitydialog.ui" line="+17" />
         <source>Stake For Charity</source>
         <translation>Стейк на благотворительность</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+35" />
         <source>Percentage of stake to send</source>
         <translation>Доля стейка для отправки</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Percentage:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Процент:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Min amount to send</source>
         <translation>Минимальная сумма отправки</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Min Amount:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Мин. сумма:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Max amount to send</source>
         <translation>Максимальная сумма отправки</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&quot;&gt;Max Amount:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&quot;&gt;Макс. сумма:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location line="+6" />
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span"&gt;Max Amount:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span"&gt;Макс. сумма:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Enter whole numbers 1 - 50</source>
         <translation>Введите целое число от 1 до 50</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location filename="../charitydialog.cpp" line="+21"/>
+        <location line="+3" />
+        <location filename="../charitydialog.cpp" line="+21" />
         <source>Enter % to Give (1-50)</source>
         <translation>Введите процент (1–50)</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <location filename="../charitydialog.cpp" line="+2"/>
+        <location line="+10" />
+        <location filename="../charitydialog.cpp" line="+2" />
         <source>Enter Min Amount (optional)</source>
         <translation>Введите мин. сумму (необязательно)</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location filename="../charitydialog.cpp" line="+1"/>
+        <location line="+13" />
+        <location filename="../charitydialog.cpp" line="+1" />
         <source>Enter Max Amount (optional)</source>
         <translation>Введите макс. сумму (необязательно)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Address to send portion of stake to</source>
         <translation>Адрес, на который отправляется часть стейка</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Recieving Address:</source>
         <translation>Адрес получателя:</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>Enter Address to Send to</source>
         <translation>Введите адрес получателя</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+40"/>
+        <location line="+7" />
+        <location line="+40" />
         <source>Choose an address from the address book</source>
         <translation>Выбрать адрес из адресной книги</translation>
     </message>
     <message>
-        <location line="-30"/>
-        <location line="+40"/>
+        <location line="-30" />
+        <location line="+40" />
         <source>Alt+A</source>
         <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-30" />
         <source>The amount left over returned to you</source>
         <translation>Остаток возвращается вам</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Change Address:</source>
         <translation>Адрес для сдачи:</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Change address must be owned by you</source>
         <translation>Адрес для сдачи должен принадлежать вам</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location filename="../charitydialog.cpp" line="+1"/>
+        <location line="+3" />
+        <location filename="../charitydialog.cpp" line="+1" />
         <source>Enter Change Address (optional)</source>
         <translation>Введите адрес для сдачи (необязательно)</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+30" />
         <source>Check and turn on Stake For Charity</source>
         <translation>Проверить и включить стейк на благотворительность</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Enable</source>
         <translation>Включить</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Turn off Stake For Charity</source>
         <translation>Выключить стейк на благотворительность</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Disable</source>
         <translation>Выключить</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Stake For Charity allows you to automatically send up to 50% of your stake to another Netcoin address after it matures.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Please enter percentage to give and Netcoin address to give to. Min and Max amount and change address are optional.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Стейк на благотворительность автоматически отправляет до 50% вашего стейка на другой адрес Netcoin после его созревания.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Укажите процент и адрес получателя. Мин. и макс. суммы и адрес для сдачи необязательны.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../charitydialog.cpp" line="-3"/>
+        <location filename="../charitydialog.cpp" line="-3" />
         <source>Enter recieving Address</source>
         <translation>Введите адрес получателя</translation>
     </message>
     <message>
-        <location line="+37"/>
-        <location line="+124"/>
+        <location line="+37" />
+        <location line="+124" />
         <source>Thank you for giving to
 </source>
         <translation>Спасибо за пожертвование
 </translation>
     </message>
     <message>
-        <location line="-124"/>
-        <location line="+124"/>
+        <location line="-124" />
+        <location line="+124" />
         <source>.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-82" />
         <source>Please unlock wallet before starting stake for Charity.</source>
         <translation>Разблокируйте кошелёк перед запуском стейка на благотворительность.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>The entered address:
 </source>
         <translation>Введённый адрес:
 </translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+52"/>
+        <location line="+0" />
+        <location line="+52" />
         <source> is invalid.
 Please check the address and try again.</source>
         <translation> неверен.
 Проверьте адрес и попробуйте снова.</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-43" />
         <source>Please Enter 1 - 50 for percent.</source>
         <translation>Введите процент от 1 до 50.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>Min Amount out of Range, please re-enter.</source>
         <translation>Мин. сумма вне диапазона, введите заново.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>Max Amount out of Range, please re-enter.</source>
         <translation>Макс. сумма вне диапазона, введите заново.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+9" />
         <source>Min Amount &gt; Max Amount, please re-enter.</source>
         <translation>Мин. сумма &gt; макс. суммы, введите заново.</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <location line="+7"/>
+        <location line="+11" />
+        <location line="+7" />
         <source>The entered change address:
 </source>
         <translation>Введённый адрес для сдачи:
 </translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source> is not owned.
 Please check the address and try again.</source>
         <translation> вам не принадлежит.
 Проверьте адрес и попробуйте снова.</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+29" />
         <source>Stake for Charity is now off</source>
         <translation>Стейк на благотворительность выключен</translation>
     </message>
@@ -3222,233 +3274,233 @@ Please check the address and try again.</source>
 <context>
     <name>StakeReportDialog</name>
     <message>
-        <location filename="../forms/stakereportdialog.ui" line="+26"/>
-        <location line="+58"/>
+        <location filename="../forms/stakereportdialog.ui" line="+26" />
+        <location line="+58" />
         <source>Stake Report</source>
         <translation>Отчёт о стейкинге</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-15" />
         <source>Earnings made by stake over time</source>
         <translation>Доход от стейкинга по времени</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+44" />
         <source>Coin SubTotal</source>
         <translation>Сумма монет</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+20" />
         <source>Blocks Staked</source>
         <translation>Блоков застейкано</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+451"/>
+        <location line="+3" />
+        <location line="+451" />
         <source>Stakes</source>
         <translation>Стейки</translation>
     </message>
     <message>
-        <location line="-428"/>
+        <location line="-428" />
         <source>Last 24 Hours</source>
         <translation>Последние 24 часа</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+18" />
         <source>Coin Earned in last 24H</source>
         <translation>Монет заработано за 24 ч</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+68"/>
-        <location line="+68"/>
-        <location line="+68"/>
-        <location line="+100"/>
+        <location line="+3" />
+        <location line="+68" />
+        <location line="+68" />
+        <location line="+68" />
+        <location line="+100" />
         <source>0.00</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-283"/>
+        <location line="-283" />
         <source>Stake Made in last 24H</source>
         <translation>Стейков за 24 ч</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+68"/>
-        <location line="+68"/>
-        <location line="+68"/>
-        <location line="+306"/>
+        <location line="+3" />
+        <location line="+68" />
+        <location line="+68" />
+        <location line="+68" />
+        <location line="+306" />
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="-487"/>
+        <location line="-487" />
         <source>Last 7 Days</source>
         <translation>Последние 7 дней</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+18" />
         <source>Coin Earned in last 7 Days</source>
         <translation>Монет заработано за 7 дней</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+24" />
         <source>Stake Made in last 7 Days</source>
         <translation>Стейков за 7 дней</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+26" />
         <source>Last 30 Days</source>
         <translation>Последние 30 дней</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+18" />
         <source>Coin Earned in last 30 Days</source>
         <translation>Монет заработано за 30 дней</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+24" />
         <source>Stake Made in last 30 Days</source>
         <translation>Стейков за 30 дней</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+26" />
         <source>Last 365 Days</source>
         <translation>Последние 365 дней</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+18" />
         <source>Coin Earned in last 365 Days</source>
         <translation>Монет заработано за 365 дней</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+24" />
         <source>Stake Made in last 365 Days</source>
         <translation>Стейков за 365 дней</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+46" />
         <source>Date of the last mature Stake</source>
         <translation>Дата последнего созревшего стейка</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Never</source>
         <translation>Никогда</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+27" />
         <source>Coin Earned in last mature Stake</source>
         <translation>Монет за последний созревший стейк</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+76" />
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+15"/>
-        <location filename="../stakereportdialoge.cpp" line="+205"/>
+        <location line="+15" />
+        <location filename="../stakereportdialoge.cpp" line="+205" />
         <source>Amount</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+93" />
         <source>Time took to retrieve the data</source>
         <translation>Время получения данных</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+23"/>
+        <location line="+3" />
+        <location line="+23" />
         <source>Wait please...</source>
         <translation>Подождите...</translation>
     </message>
     <message>
-        <location line="-3"/>
+        <location line="-3" />
         <source>Time took to refresh dialog</source>
         <translation>Время обновления окна</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+23" />
         <source>Total Stakes Analyzed</source>
         <translation>Всего проанализировано стейков</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+25" />
         <source>Data of the current block.</source>
         <translation>Данные текущего блока.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Current Chain Block :</source>
         <translation>Текущий блок цепочки:</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+24" />
         <source>Refresh the data</source>
         <translation>Обновить данные</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Refresh</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Copy Report to ClipBoard</source>
         <translation>Скопировать отчёт в буфер обмена</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Copy to clipboard</source>
         <translation>Копировать в буфер обмена</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Close the dialog</source>
         <translation>Закрыть окно</translation>
     </message>
     <message>
-        <location filename="../stakereportdialoge.cpp" line="-26"/>
+        <location filename="../stakereportdialoge.cpp" line="-26" />
         <source>Please wait...</source>
         <translation>Подождите...</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+22" />
         <source>SubTotal</source>
         <translation>Итого</translation>
     </message>
     <message>
-        <location line="+17"/>
-        <location line="+2"/>
-        <location line="+2"/>
-        <location line="+2"/>
-        <location line="+3"/>
+        <location line="+17" />
+        <location line="+2" />
+        <location line="+2" />
+        <location line="+2" />
+        <location line="+3" />
         <source> [NET]</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Amount: </source>
         <translation>Сумма: </translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Latest stake date: </source>
         <translation>Дата последнего стейка: </translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Stakes analysed: </source>
         <translation>Проанализировано стейков: </translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Last Recalc took </source>
         <translation>Последний пересчёт занял </translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Refresh took </source>
         <translation>Обновление заняло </translation>
     </message>
@@ -3456,37 +3508,37 @@ Please check the address and try again.</source>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+21"/>
+        <location filename="../transactiondesc.cpp" line="+21" />
         <source>Open until %1</source>
         <translation>Открыто до %1</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>conflicted</source>
         <translation>конфликт</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>%1/offline</source>
         <translation>%1/оффлайн</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>%1/unconfirmed</source>
         <translation>%1/не подтверждено</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>%1 confirmations</source>
         <translation>%1 подтверждений</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+19" />
         <source>Status</source>
         <translation>Статус</translation>
     </message>
     <message numerus="yes">
-        <location line="+7"/>
+        <location line="+7" />
         <source>, broadcast through %n node(s)</source>
         <translation>
             <numerusform>, разослано через %n узел</numerusform>
@@ -3495,55 +3547,55 @@ Please check the address and try again.</source>
         </translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Source</source>
         <translation>Источник</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Generated</source>
         <translation>Сгенерировано</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+17"/>
+        <location line="+5" />
+        <location line="+17" />
         <source>From</source>
         <translation>От</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+22"/>
-        <location line="+58"/>
+        <location line="+1" />
+        <location line="+22" />
+        <location line="+58" />
         <source>To</source>
         <translation>Для</translation>
     </message>
     <message>
-        <location line="-77"/>
-        <location line="+2"/>
+        <location line="-77" />
+        <location line="+2" />
         <source>own address</source>
         <translation>свой адрес</translation>
     </message>
     <message>
-        <location line="-2"/>
+        <location line="-2" />
         <source>label</source>
         <translation>метка</translation>
     </message>
     <message>
-        <location line="+37"/>
-        <location line="+12"/>
-        <location line="+45"/>
-        <location line="+17"/>
-        <location line="+30"/>
+        <location line="+37" />
+        <location line="+12" />
+        <location line="+45" />
+        <location line="+17" />
+        <location line="+30" />
         <source>Credit</source>
         <translation>Кредит</translation>
     </message>
     <message numerus="yes">
-        <location line="-102"/>
+        <location line="-102" />
         <source>matures in %n more block(s)</source>
         <translation>
             <numerusform>будет доступно через %n блок</numerusform>
@@ -3552,85 +3604,85 @@ Please check the address and try again.</source>
         </translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>not accepted</source>
         <translation>не принято</translation>
     </message>
     <message>
-        <location line="+44"/>
-        <location line="+8"/>
-        <location line="+15"/>
-        <location line="+30"/>
+        <location line="+44" />
+        <location line="+8" />
+        <location line="+15" />
+        <location line="+30" />
         <source>Debit</source>
         <translation>Дебет</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-39" />
         <source>Transaction fee</source>
         <translation>Комиссия</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>Net amount</source>
         <translation>Чистая сумма</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Message</source>
         <translation>Сообщение</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Comment</source>
         <translation>Комментарий</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Transaction ID</source>
         <translation>ID транзакции</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Generated coins must mature 70 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <location line="+3" />
+        <source>Generated coins must mature 70 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Созданные монеты должны созреть 70 блоков, прежде чем их можно будет потратить. Созданный вами блок был разослан в сеть для добавления в цепочку. Если он не попадёт в цепочку, его статус изменится на «не принят» и потратить его будет нельзя. Иногда так бывает, если другой узел создаёт блок на несколько секунд раньше вас.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Debug information</source>
         <translation>Отладочная информация</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Transaction</source>
         <translation>Транзакция</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Inputs</source>
         <translation>Входы</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+24" />
         <source>Amount</source>
         <translation>Количество</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>true</source>
         <translation>истина</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>false</source>
         <translation>ложь</translation>
     </message>
     <message>
-        <location line="-212"/>
+        <location line="-212" />
         <source>, has not been successfully broadcast yet</source>
         <translation>, ещё не было успешно разослано</translation>
     </message>
     <message numerus="yes">
-        <location line="-38"/>
+        <location line="-38" />
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Открыта ещё %n блок</numerusform>
@@ -3639,7 +3691,7 @@ Please check the address and try again.</source>
         </translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+73" />
         <source>unknown</source>
         <translation>неизвестно</translation>
     </message>
@@ -3647,12 +3699,12 @@ Please check the address and try again.</source>
 <context>
     <name>TransactionDescDialog</name>
     <message>
-        <location filename="../forms/transactiondescdialog.ui" line="+14"/>
+        <location filename="../forms/transactiondescdialog.ui" line="+14" />
         <source>Transaction details</source>
         <translation>Детали транзакции</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Данный диалог показывает детализированную статистику по выбранной транзакции</translation>
     </message>
@@ -3660,37 +3712,37 @@ Please check the address and try again.</source>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+238"/>
+        <location filename="../transactiontablemodel.cpp" line="+239" />
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Amount</source>
         <translation>Количество</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+67" />
         <source>Open until %1</source>
         <translation>Открыто до %1</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>Confirmed (%1 confirmations)</source>
         <translation>Подтверждено (%1 подтверждений)</translation>
     </message>
     <message numerus="yes">
-        <location line="-15"/>
+        <location line="-15" />
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Открыто для ещё %n блока</numerusform>
@@ -3699,97 +3751,97 @@ Please check the address and try again.</source>
         </translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Offline</source>
         <translation>Оффлайн</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Unconfirmed</source>
         <translation>Не подтверждено</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>Подтверждается (%1 из %2 рекомендованных подтверждений)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Conflicted</source>
         <translation>Конфликт</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Незрелые (%1 подтверждений, будут доступны после %2)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Этот блок не был получен другими узлами и, возможно, не будет принят!</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Generated but not accepted</source>
         <translation>Сгенерировано, но не принято</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+42" />
         <source>Received with</source>
         <translation>Получено</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Received from</source>
         <translation>Получено от</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Sent to</source>
         <translation>Отправлено</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Payment to yourself</source>
         <translation>Отправлено себе</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Mined</source>
         <translation>Добыто</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>POS Mined</source>
         <translation>Добыто PoS</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+42" />
         <source>(n/a)</source>
         <translation>[не доступно]</translation>
     </message>
     <message>
-        <location line="+191"/>
+        <location line="+191" />
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>Статус транзакции. Подведите курсор к нужному полю для того, чтобы увидеть количество подтверждений.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Date and time that the transaction was received.</source>
         <translation>Дата и время, когда транзакция была получена.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Type of transaction.</source>
         <translation>Тип транзакции.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Destination address of transaction.</source>
         <translation>Адрес назначения транзакции.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Amount removed from or added to balance.</source>
         <translation>Сумма, добавленная, или снятая с баланса.</translation>
     </message>
@@ -3797,178 +3849,178 @@ Please check the address and try again.</source>
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+65"/>
-        <location line="+16"/>
+        <location filename="../transactionview.cpp" line="+65" />
+        <location line="+16" />
         <source>All</source>
         <translation>Все</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-15" />
         <source>Today</source>
         <translation>Сегодня</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>This week</source>
         <translation>На этой неделе</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>This month</source>
         <translation>В этом месяце</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Last month</source>
         <translation>За последний месяц</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>This year</source>
         <translation>В этом году</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Range...</source>
         <translation>Промежуток...</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>Received with</source>
         <translation>Получено на</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Sent to</source>
         <translation>Отправлено на</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>To yourself</source>
         <translation>Отправленные себе</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Mined</source>
         <translation>Добытые</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Pos-mined</source>
         <translation>Добыто PoS</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Other</source>
         <translation>Другое</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>Enter address or label to search</source>
         <translation>Введите адрес или метку для поиска</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Min amount</source>
         <translation>Мин. сумма</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+37" />
         <source>Copy address</source>
         <translation>Копировать адрес</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy label</source>
         <translation>Копировать метку</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy amount</source>
         <translation>Скопировать сумму</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Copy transaction ID</source>
         <translation>Скопировать ID транзакции</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Edit label</source>
         <translation>Изменить метку</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Show transaction details</source>
         <translation>Показать подробности транзакции</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Show transaction on the Netcoin Block Explorer</source>
         <translation>Показать транзакцию в обозревателе блоков Netcoin</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+148" />
         <source>Export Transaction Data</source>
         <translation>Экспортировать данные транзакций</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Comma separated file (*.csv)</source>
         <translation>Текст, разделённый запятыми (*.csv)</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Confirmed</source>
         <translation>Подтверждено</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Label</source>
         <translation>Метка</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Amount</source>
         <translation>Количество</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Error exporting</source>
         <translation>Ошибка экспорта</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+0" />
         <source>Could not write to file %1.</source>
         <translation>Невозможно записать в файл %1.</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+112" />
         <source>Range:</source>
         <translation>Промежуток от:</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>to</source>
         <translation>до</translation>
     </message>
@@ -3976,7 +4028,7 @@ Please check the address and try again.</source>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+250"/>
+        <location filename="../walletmodel.cpp" line="+250" />
         <source>Sending...</source>
         <translation>Отправка....</translation>
     </message>
@@ -3984,43 +4036,43 @@ Please check the address and try again.</source>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+33"/>
+        <location filename="../bitcoinstrings.cpp" line="+33" />
         <source>Netcoin version</source>
         <translation>Версия</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Usage:</source>
         <translation>Использование:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>List commands</source>
         <translation>Список команд
 </translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Get help for a command</source>
         <translation>Получить помощь по команде</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Options:</source>
         <translation>Опции:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Specify wallet file (within data directory)</source>
         <translation>Указать файл кошелька (в пределах DATA директории)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-1" />
         <source>Specify data directory</source>
         <translation>Укажите каталог данных</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-34" />
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -4030,7 +4082,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Netcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Netcoin Alert" admin@foo.com
 </source>
         <translation>%s, необходимо задать rpcpassword в файле конфигурации:
  %s
@@ -4041,639 +4093,659 @@ rpcpassword=%s
 Имя пользователя и пароль НЕ ДОЛЖНЫ совпадать.
 Если файла нет, создайте его с правами на чтение только для владельца.
 Также рекомендуется задать alertnotify, чтобы получать уведомления о проблемах;
-например: alertnotify=echo %%s | mail -s &quot;Netcoin Alert&quot; admin@foo.com
+например: alertnotify=echo %%s | mail -s "Netcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+26" />
         <source>Send command to -server or netcoind</source>
         <translation>Отправить команду -server или netcoind</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Specify configuration file (default: netcoin.conf)</source>
         <translation>Файл конфигурации (по умолчанию: netcoin.conf)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Specify pid file (default: netcoind.pid)</source>
         <translation>Файл pid (по умолчанию: netcoind.pid)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Set database cache size in megabytes (default: 25)</source>
         <translation>Установить размер кэша базы данных в мегабайтах (по умолчанию: 25)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Set database disk log size in megabytes (default: 100)</source>
         <translation>Установить размер лога базы данных в мегабайтах (по умолчанию: 100)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>Listen for connections on &lt;port&gt; (default: 15714 or testnet: 25714)</source>
         <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: 15714 или 25714 в тестовой сети)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation>Поддерживать не более &lt;n&gt; подключений к узлам (по умолчанию: 125)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Подключиться к узлу, чтобы получить список адресов других участников и отключиться</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Specify your own public address</source>
         <translation>Укажите ваш собственный публичный адрес</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Bind to given address. Use [host]:port notation for IPv6</source>
         <translation>Привязаться (bind) к указанному адресу. Используйте запись вида [хост]:порт для IPv6</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Stake your coins to support network and gain reward (default: 1)</source>
         <translation>Стейкать монеты для поддержки сети и получения наград (по умолчанию: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Порог для отключения неправильно ведущих себя узлов (по умолчанию: 100)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Число секунд блокирования неправильно ведущих себя узлов (по умолчанию: 86400)</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-44" />
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Произошла ошибка при открытии RPC-порта %u для прослушивания на IPv4: %s</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+51" />
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
         <translation>Отключить базы данных блоков и адресов. Увеличивает время завершения работы (по умолчанию: 0)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+109" />
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла wallet.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
     </message>
     <message>
-        <location line="-5"/>
+        <location line="-5" />
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
         <translation>Ошибка: эта транзакция требует комиссию в размере как минимум %s из-за её объёма, сложности или использования недавно полученных средств  </translation>
     </message>
     <message>
-        <location line="-87"/>
+        <location line="-87" />
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22444 or testnet: 25715)</source>
         <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: 22444 или для testnet: 25715)</translation>
     </message>
     <message>
-        <location line="-11"/>
+        <location line="-11" />
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Принимать командную строку и команды JSON-RPC</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+101" />
         <source>Error: Transaction creation failed  </source>
         <translation>Ошибка: Создание транзакции не удалось  </translation>
     </message>
     <message>
-        <location line="-5"/>
+        <location line="-5" />
         <source>Error: Wallet locked, unable to create transaction  </source>
         <translation>Ошибка: бумажник заблокирован, невозможно создать транзакцию  </translation>
     </message>
     <message>
-        <location line="-8"/>
+        <location line="-8" />
         <source>Importing blockchain data file.</source>
         <translation>Импортируется файл цепи блоков.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Importing bootstrap blockchain data file.</source>
         <translation>Импортируется bootstrap-файл цепи блоков.</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-88" />
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Запускаться в фоне как демон и принимать команды</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Use the test network</source>
         <translation>Использовать тестовую сеть</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-24" />
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Принимать подключения извне (по умолчанию: 1, если не используется -proxy или -connect)</translation>
     </message>
     <message>
-        <location line="-38"/>
+        <location line="-38" />
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Произошла ошибка при открытии на прослушивание IPv6 RCP-порта %u, возвращаемся к IPv4: %s</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+117" />
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Ошибка инициализации окружения БД %s! Для восстановления СДЕЛАЙТЕ РЕЗЕРВНУЮ КОПИЮ этой директории, затем удалите из нее все, кроме wallet.dat.</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-20" />
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Максимальный размер высокоприоритетных/низкокомиссионных транзакций в байтах (по умолчанию: 27000)</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Внимание: установлено очень большое значение -paytxfee. Это комиссия, которую вы заплатите при проведении транзакции.</translation>
     </message>
     <message>
-        <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Netcoin will not work properly.</source>
+        <location line="+61" />
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Netcoin will not work properly.</source>
         <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Netcoin будет работать некорректно.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-31" />
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Внимание: ошибка чтения wallet.dat! Все ключи восстановлены, но записи в адресной книге и истории транзакций могут быть некорректными.</translation>
     </message>
     <message>
-        <location line="-18"/>
+        <location line="-18" />
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Внимание: wallet.dat был поврежден, данные восстановлены! Оригинальный wallet.dat сохранен как wallet.{timestamp}.bak в %s;, если ваши транзакции или баланс отображаются неправильно, следует восстановить его из данной копии.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-30" />
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Попытка восстановления ключей из поврежденного wallet.dat</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Block creation options:</source>
         <translation>Параметры создания блоков:</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-62" />
         <source>Connect only to the specified node(s)</source>
         <translation>Подключаться только к указанному узлу(ам)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Определить свой IP (по умолчанию: 1 при прослушивании и если не используется -externalip)</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+94" />
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Не удалось начать прослушивание на порту. Используйте -listen=0 если вас это устраивает.</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-90" />
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Искать узлы с помощью DNS (по умолчанию: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Политика синхронизированных меток (по умолчанию: strict)</translation>
     </message>
     <message>
-        <location line="+83"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Неверный адрес -tor: &apos;%s&apos;</translation>
+        <location line="+83" />
+        <source>Invalid -tor address: '%s'</source>
+        <translation>Неверный адрес -tor: '%s'</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
         <translation>Неверная сумма для -reservebalance=&lt;сумма&gt;</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-82" />
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Максимальный размер буфера приёма на соединение, &lt;n&gt;*1000 байт (по умолчанию: 5000)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
         <translation>Максимальный размер буфера отправки на соединение, &lt;n&gt;*1000 байт (по умолчанию: 1000)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-16" />
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Подключаться только к узлам из сети &lt;net&gt; (IPv4, IPv6 или Tor)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+28" />
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Выводить больше отладочной информации. Включает все остальные опции -debug*</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Output extra network debugging information</source>
         <translation>Выводить дополнительную сетевую отладочную информацию</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Prepend debug output with timestamp</source>
         <translation>Дописывать отметки времени к отладочному выводу</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+35" />
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>
 Параметры SSL: (см. Bitcoin Wiki для инструкций по настройке SSL)</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-74" />
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Выберите версию SOCKS-прокси (4-5, по умолчанию: 5)</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+41" />
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Выводить информацию трассировки/отладки на консоль вместо файла debug.log</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Send trace/debug info to debugger</source>
         <translation>Отправлять информацию трассировки/отладки в отладчик</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+28" />
         <source>Set maximum block size in bytes (default: 250000)</source>
         <translation>Максимальный размер блока в байтах (по умолчанию: 250000)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-1" />
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Минимальный размер блока в байтах (по умолчанию: 0)</translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="-29" />
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Сжимать файл debug.log при запуске клиента (по умолчанию: 1, если нет -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-42" />
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Таймаут соединения в миллисекундах (по умолчанию: 5000)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+109" />
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>Не удалось подписать контрольную точку, неверный checkpointkey?
 </translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-80" />
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Использовать UPnP для проброса порта (по умолчанию: 0)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-1" />
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
         <translation>Использовать UPnP для проброса порта (по умолчанию: 1, если используется прослушивание)</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-25" />
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Использовать прокси для скрытых сервисов (по умолчанию: тот же, что и в -proxy)</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+42" />
         <source>Username for JSON-RPC connections</source>
         <translation>Имя для подключений JSON-RPC</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+47" />
         <source>Verifying database integrity...</source>
         <translation>Проверка целостности базы данных...</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+57" />
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>ВНИМАНИЕ: обнаружено нарушение синхронизированной контрольной точки, но оно пропущено!</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Warning: Disk space is low!</source>
         <translation>Внимание: мало места на диске!</translation>
     </message>
     <message>
-        <location line="-2"/>
+        <location line="-2" />
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Внимание: эта версия устарела, требуется обновление!</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-48" />
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat поврежден, восстановление не удалось</translation>
     </message>
     <message>
-        <location line="-54"/>
+        <location line="-54" />
         <source>Password for JSON-RPC connections</source>
         <translation>Пароль для подключений JSON-RPC</translation>
     </message>
     <message>
-        <location line="-33"/>
+        <location line="-33" />
         <source>Find peers using internet relay chat (default: 0)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+15" />
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+16" />
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Разрешить подключения JSON-RPC с указанного IP</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Посылать команды узлу, запущенному на &lt;ip&gt; (по умолчанию: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Выполнить команду, когда появляется новый блок (%s в команде заменяется на хэш блока)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Выполнить команду, когда получена новая транзакция (%s в команде заменяется на ID транзакции)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Require a confirmations for change (default: 0)</source>
         <translation>Требовать подтверждения для сдачи (по умолчанию: 0)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Enforce transaction scripts to use canonical PUSH operators (default: 1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Upgrade wallet to latest format</source>
         <translation>Обновить бумажник до последнего формата</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Установить размер запаса ключей в &lt;n&gt; (по умолчанию: 100)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Перепроверить цепь блоков на предмет отсутствующих в бумажнике транзакций</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+2" />
         <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
         <translation>Сколько блоков проверять при запуске (по умолчанию: 2500, 0 = все)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>How thorough the block verification is (0-6, default: 1)</source>
         <translation>Насколько тщательно проверять блоки (0-6, по умолчанию: 1)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Imports blocks from external blk000?.dat file</source>
         <translation>Импортировать блоки из внешнего файла blk000?.dat</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Использовать OpenSSL (https) для подключений JSON-RPC</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Server certificate file (default: server.cert)</source>
         <translation>Файл серверного сертификата (по умолчанию: server.cert)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Server private key (default: server.pem)</source>
         <translation>Приватный ключ сервера (по умолчанию: server.pem)</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Разрешённые алгоритмы (по умолчанию: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+31" />
         <source>Error loading block database</source>
         <translation>Ошибка загрузки базы блоков</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+22" />
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Ошибка: кошелёк разблокирован только для стейкинга, создать транзакцию нельзя.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+18" />
         <source>WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers.</source>
         <translation>ВНИМАНИЕ: найдена неверная контрольная точка! Показанные транзакции могут быть неверны! Возможно, нужно обновить программу или сообщить разработчикам.</translation>
     </message>
     <message>
-        <location line="-158"/>
+        <location line="+3" />
+        <source>Importing block chain snapshot...</source>
+        <translation>Импорт снимка цепочки блоков...</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Importing block chain snapshot... %d%%</source>
+        <translation>Импорт снимка цепочки блоков... %d%%</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Importing the snapshot failed:</source>
+        <translation>Не удалось импортировать снимок:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The imported snapshot is not valid: block %d (%s) is not in its block chain. Close NetCoin and delete blk0001.dat and the txleveldb folder from the data directory to download the block chain from the network%s.</source>
+        <translation>Импортированный снимок недействителен: блока %d (%s) нет в его цепочке. Закройте NetCoin и удалите blk0001.dat и папку txleveldb из каталога данных, чтобы скачать цепочку блоков из сети%s.</translation>
+    </message>
+    <message>
+        <location line="-164" />
         <source>This help message</source>
         <translation>Эта справка</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+95" />
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Кошелек %s находится вне рабочей директории %s.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Cannot obtain a lock on data directory %s.  Netcoin is probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-98" />
         <source>Netcoin</source>
         <translation>Netcoin</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+140" />
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Невозможно привязаться к %s на этом компьютере (bind вернул ошибку %d, %s)</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-130" />
         <source>Connect through socks proxy</source>
         <translation>Подключаться через socks прокси</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+3" />
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Разрешить поиск в DNS для -addnode, -seednode и -connect</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+122" />
         <source>Loading addresses...</source>
         <translation>Загрузка адресов...</translation>
     </message>
     <message>
-        <location line="-13"/>
+        <location line="-13" />
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Ошибка загрузки wallet.dat: Бумажник поврежден</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+4" />
         <source>Error loading wallet.dat: Wallet requires newer version of Netcoin</source>
         <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Netcoin</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Wallet needed to be rewritten: restart Netcoin to complete</source>
         <translation>Необходимо перезаписать бумажник, перезапустите Netcoin для завершения операции</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Error loading wallet.dat</source>
         <translation>Ошибка при загрузке wallet.dat</translation>
     </message>
     <message>
-        <location line="-16"/>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Неверный адрес -proxy: &apos;%s&apos;</translation>
+        <location line="-16" />
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>Неверный адрес -proxy: '%s'</translation>
     </message>
     <message>
-        <location line="-1"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>В параметре -onlynet указана неизвестная сеть: &apos;%s&apos;</translation>
+        <location line="-1" />
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>В параметре -onlynet указана неизвестная сеть: '%s'</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-1" />
         <source>Unknown -socks proxy version requested: %i</source>
         <translation>В параметре -socks запрошена неизвестная версия: %i</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Не удаётся разрешить адрес в параметре -bind: &apos;%s&apos;</translation>
+        <location line="+4" />
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Не удаётся разрешить адрес в параметре -bind: '%s'</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Не удаётся разрешить адрес в параметре -externalip: &apos;%s&apos;</translation>
+        <location line="+2" />
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Не удаётся разрешить адрес в параметре -externalip: '%s'</translation>
     </message>
     <message>
-        <location line="-24"/>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Неверное количество в параметре -paytxfee=&lt;кол-во&gt;: &apos;%s&apos;</translation>
+        <location line="-24" />
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Неверное количество в параметре -paytxfee=&lt;кол-во&gt;: '%s'</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+44" />
         <source>Error: could not start node</source>
         <translation>Ошибка: не удалось запустить узел</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+11" />
         <source>Sending...</source>
         <translation>Отправка...</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Invalid amount</source>
         <translation>Неверное количество</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Insufficient funds</source>
         <translation>Недостаточно монет</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-34" />
         <source>Loading block index...</source>
         <translation>Загрузка индекса блоков...</translation>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-103" />
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Добавить узел для подключения и пытаться поддерживать соединение открытым</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+122" />
         <source>Unable to bind to %s on this computer. Netcoin is probably already running.</source>
         <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, Netcoin уже работает.</translation>
     </message>
     <message>
-        <location line="-97"/>
+        <location line="-97" />
         <source>Fee per KB to add to transactions you send</source>
         <translation>Комиссия на килобайт, добавляемая к вашим транзакциям</translation>
     </message>
     <message>
-        <location line="+55"/>
-        <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Неверная сумма для -mininput=&lt;сумма&gt;: &apos;%s&apos;</translation>
+        <location line="+55" />
+        <source>Invalid amount for -mininput=&lt;amount&gt;: '%s'</source>
+        <translation>Неверная сумма для -mininput=&lt;сумма&gt;: '%s'</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+25" />
         <source>Loading wallet...</source>
         <translation>Загрузка бумажника...</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+8" />
         <source>Cannot downgrade wallet</source>
         <translation>Не удаётся понизить версию бумажника</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Cannot initialize keypool</source>
         <translation>Не удаётся инициализировать массив ключей</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Cannot write default address</source>
         <translation>Не удаётся записать адрес по умолчанию</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+1" />
         <source>Rescanning...</source>
         <translation>Сканирование...</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+5" />
         <source>Done loading</source>
         <translation>Загрузка завершена</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-167" />
         <source>To use the %s option</source>
         <translation>Чтобы использовать опцию %s</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+14" />
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+6" />
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
@@ -4685,44 +4757,44 @@ If the file does not exist, create it with owner-readable-only file permissions.
 <context>
     <name>calcDialog</name>
     <message>
-        <location filename="../forms/calcdialog.ui" line="+14"/>
-        <location line="+148"/>
+        <location filename="../forms/calcdialog.ui" line="+14" />
+        <location line="+148" />
         <source>PIR Calculator</source>
         <translation>Калькулятор PIR</translation>
     </message>
     <message>
-        <location line="-138"/>
+        <location line="-138" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Yearly APR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Годовая доходность&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+10" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Daily interest:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Доход в день:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <location line="+13"/>
+        <location line="+23" />
+        <location line="+13" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+7" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished" />
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+26" />
         <source>Enter Block Size</source>
         <translation>Введите сумму</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+13" />
         <source>Calculate</source>
         <translation>Рассчитать</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+12" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;This calculator gives you the daily return and your yearly APR based off the amount entered.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Enter an amount below and click calculate.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span&gt;Калькулятор показывает дневной доход и годовую доходность для введённой суммы.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Введите сумму ниже и нажмите «Рассчитать».&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>

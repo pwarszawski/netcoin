@@ -82,6 +82,10 @@ re-validated the complete main chain, from the genesis block up to block
   wallet showed plain system widgets. A `themes` folder next to the
   program or in the data directory still overrides them (see
   `src/qt/themes/custom` for a template).
+* File > Import block chain snapshot (and `-loadsnapshot=<file>` for
+  `netcoind`): start with the block chain of another node instead of
+  downloading and verifying 3.3 million blocks. `contrib/snapshot/make-snapshot.sh`
+  makes such a snapshot; see doc/run-a-node.md.
 * Qt 6. Transactions show Unconfirmed / Confirming (n/6) again instead
   of Confirmed right away.
 

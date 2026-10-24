@@ -198,4 +198,8 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Warning: Disk space is low!"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "WARNING: Invalid checkpoint found! Displayed transactions may not be "
 "correct! You may need to upgrade, or notify developers."),
+QT_TRANSLATE_NOOP("bitcoin-core", "Importing block chain snapshot..."),
+QT_TRANSLATE_NOOP("bitcoin-core", "Importing block chain snapshot... %d%%"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Importing the snapshot failed:"),
+QT_TRANSLATE_NOOP("bitcoin-core", "The imported snapshot is not valid: block %d (%s) is not in its block chain. Close NetCoin and delete blk0001.dat and the txleveldb folder from the data directory to download the block chain from the network%s."),
 };
