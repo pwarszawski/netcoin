@@ -101,6 +101,12 @@ obj/%.o: %.cpp
 	@mkdir -p obj
 	$(CXX) -c $(xCXXFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
 
+# Homebrew's LevelDB is built without RTTI; a class derived from one of its
+# classes (CBatchScanner) must be compiled the same way
+obj/txdb-leveldb.o: txdb-leveldb.cpp
+	@mkdir -p obj
+	$(CXX) -c $(xCXXFLAGS) -fno-rtti -MMD -MF $(@:%.o=%.d) -o $@ $<
+
 netcoind: $(OBJS)
 	$(CXX) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 

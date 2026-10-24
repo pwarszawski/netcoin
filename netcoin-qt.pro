@@ -189,6 +189,19 @@ contains(USE_SYSTEM_LEVELDB, 1) {
     QMAKE_CLEAN += $$PWD/src/leveldb/libleveldb.a; cd $$PWD/src/leveldb ; $(MAKE) clean
 }
 
+# macOS: Homebrew's LevelDB is built without RTTI, so the file with a class
+# derived from a LevelDB class (CBatchScanner) is compiled with -fno-rtti
+macx:contains(USE_SYSTEM_LEVELDB, 1) {
+    SOURCES -= src/txdb-leveldb.cpp
+    NORTTI_SOURCES = src/txdb-leveldb.cpp
+    nortti.input = NORTTI_SOURCES
+    nortti.output = $$OBJECTS_DIR/${QMAKE_FILE_BASE}.o
+    nortti.commands = $(CXX) -c $(CXXFLAGS) -fno-rtti $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
+    nortti.dependency_type = TYPE_C
+    nortti.variable_out = OBJECTS
+    QMAKE_EXTRA_COMPILERS += nortti
+}
+
 # regenerate src/build.h
 !windows|contains(USE_BUILD_INFO, 1) {
     genbuild.depends = FORCE
