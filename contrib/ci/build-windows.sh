@@ -59,6 +59,16 @@ if [ "$STATIC" = 1 ]; then
         [ -f "$MINGW_PREFIX/lib/lib$l.a" ] || { echo "static library lib$l.a missing" | tee -a "$LOG"; false; }
     done
     log "extra libraries for LevelDB:${LEVELDB_EXTRA_LIBS:- none}"
+    # MSYS2 ships libqrencode only as a DLL: build the static library
+    if [ "$HAVE_QR" = 1 ] && [ ! -f "$MINGW_PREFIX/lib/libqrencode.a" ]; then
+        log "building static libqrencode"
+        pacman -S --noconfirm --needed "$P-cmake" >>"$LOG" 2>&1
+        rm -rf "$ROOT/build-qrencode"
+        git clone -q --depth 1 -b v4.1.1 https://github.com/fukuchi/libqrencode.git "$ROOT/build-qrencode" >>"$LOG" 2>&1
+        (cd "$ROOT/build-qrencode" && cmake -G "MSYS Makefiles" -DBUILD_SHARED_LIBS=OFF -DWITH_TOOLS=OFF \
+            -DCMAKE_INSTALL_PREFIX="$MINGW_PREFIX" . && make -j"$JOBS" && make install) >>"$LOG" 2>&1
+        [ -f "$MINGW_PREFIX/lib/libqrencode.a" ] || { echo "static libqrencode not built" | tee -a "$LOG"; false; }
+    fi
 fi
 MAKEARGS=(USE_BDB=$HAVE_BDB STATIC=$STATIC "LEVELDB_EXTRA_LIBS=$LEVELDB_EXTRA_LIBS")
 

@@ -40,12 +40,13 @@ APP="$DIST/NetCoin.app"
 cp "$ROOT/src/netcoind" "$APP/Contents/MacOS/"
 # copy Qt and all Homebrew libraries into the bundle and point the binaries at them
 "$QT5/bin/macdeployqt" "$APP" -executable="$APP/Contents/MacOS/netcoind" -always-overwrite
-# the "offscreen" platform plugin (for the automatic start test below and for
+# the "minimal" platform plugin (for the automatic start test below and for
 # running without a display); its Qt references must point into the bundle
 mkdir -p "$APP/Contents/PlugIns/platforms"
-OFFSCREEN="$APP/Contents/PlugIns/platforms/libqoffscreen.dylib"
-cp -L "$QT5/plugins/platforms/libqoffscreen.dylib" "$OFFSCREEN"; chmod u+w "$OFFSCREEN"
-install_name_tool -id "@executable_path/../PlugIns/platforms/libqoffscreen.dylib" "$OFFSCREEN" 2>/dev/null
+OFFSCREEN="$APP/Contents/PlugIns/platforms/libqminimal.dylib"
+cp -L "$QT5/plugins/platforms/libqminimal.dylib" "$OFFSCREEN"; chmod u+w "$OFFSCREEN"
+install_name_tool -id "@executable_path/../PlugIns/platforms/libqminimal.dylib" "$OFFSCREEN" 2>/dev/null
+otool -L "$OFFSCREEN"
 for dep in $(otool -L "$OFFSCREEN" | awk 'NR>1{print $1}' | grep '\.framework/' || true); do
     fwpath="${dep#@rpath/}"; fwpath="${fwpath##*/lib/}"
     install_name_tool -change "$dep" "@executable_path/../Frameworks/$fwpath" "$OFFSCREEN" 2>/dev/null
@@ -107,7 +108,7 @@ done
 "$APP/Contents/MacOS/netcoind" -testnet -datadir="$SMOKE" stop
 sleep 5
 mkdir -p "$SMOKE/gui"
-QT_QPA_PLATFORM=offscreen "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
+QT_DEBUG_PLUGINS=1 QT_QPA_PLATFORM=minimal "$APP/Contents/MacOS/netcoin" -testnet -datadir="$SMOKE/gui" -splash=0 -connect=0 -dnsseed=0 &
 GUIPID=$!
 sleep 30
 kill -0 "$GUIPID"          # still running after 30 s
