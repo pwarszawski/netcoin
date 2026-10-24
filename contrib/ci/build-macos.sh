@@ -53,26 +53,29 @@ for pass in 1 2 3 4 5; do
                 src="$BREWLIB/$name"
                 [ -f "$src" ] || src="$(find "$(brew --prefix)/opt" -name "$name" -print -quit)"
                 cp -L "$src" "$FW/$name"; chmod u+w "$FW/$name"
-                install_name_tool -id "@executable_path/../Frameworks/$name" "$FW/$name"
+                install_name_tool -id "@executable_path/../Frameworks/$name" "$FW/$name" 2>/dev/null
                 added=1
             fi
             case "$f" in
-                "$FW"/*) install_name_tool -change "$dep" "@loader_path/$name" "$f" ;;
-                *)       install_name_tool -change "$dep" "@executable_path/../Frameworks/$name" "$f" ;;
+                "$FW"/*) install_name_tool -change "$dep" "@loader_path/$name" "$f" 2>/dev/null ;;
+                *)       install_name_tool -change "$dep" "@executable_path/../Frameworks/$name" "$f" 2>/dev/null ;;
             esac
         done
     done
     [ "$added" = 0 ] && break
 done
+echo "== checking the bundle"
 # nothing may still refer to Homebrew
 if otool -L "$APP/Contents/MacOS/"* "$FW/"*.dylib | grep -E '^[[:space:]]*/(opt|usr/local)/'; then
     echo "error: the bundle still links to Homebrew libraries"; false
 fi
 # macdeployqt invalidates the signatures; Apple Silicon needs at least an ad-hoc one
+echo "== signing"
 codesign --force --deep --sign - "$APP"
 codesign --verify --deep --strict "$APP"
 "$APP/Contents/MacOS/netcoind" -? > "$ROOT/dist/help.txt"; head -3 "$ROOT/dist/help.txt"; rm -f "$ROOT/dist/help.txt"
 
+echo "== smoke test"
 # smoke test of the bundled binaries (nobody tests the Mac build by hand):
 # the node starts, answers RPC and stops cleanly; the wallet window starts
 SMOKE="$(mktemp -d)"

@@ -43,7 +43,9 @@ endif
 
 # STATIC=1: link all libraries statically (one self-contained .exe);
 # LEVELDB_EXTRA_LIBS: libraries a static LevelDB needs (e.g. -lsnappy -lcrc32c)
+TESTLINK = -DBOOST_TEST_DYN_LINK
 ifeq (${STATIC}, 1)
+	TESTLINK =
 	LIBS += $(LEVELDB_EXTRA_LIBS)
 	DEFS += -DBOOST_THREAD_USE_LIB -DMINIUPNP_STATICLIB
 endif
@@ -121,7 +123,7 @@ TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
 obj-test/%.o: test/%.cpp
 	@mkdir -p obj-test
-	$(CXX) -c -DTEST_DATA_DIR=$(abspath test/data) -DBOOST_TEST_DYN_LINK $(xCXXFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
+	$(CXX) -c -DTEST_DATA_DIR=$(abspath test/data) $(TESTLINK) $(xCXXFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
 
 test_netcoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS))
 	$(CXX) $(xCXXFLAGS) -o $@ $^ -l boost_unit_test_framework$(BOOST_LIB_SUFFIX) $(xLDFLAGS) $(LIBS)
