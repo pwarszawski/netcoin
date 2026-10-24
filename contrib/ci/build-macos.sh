@@ -45,6 +45,7 @@ cp "$ROOT/src/netcoind" "$APP/Contents/MacOS/"
 mkdir -p "$APP/Contents/PlugIns/platforms"
 OFFSCREEN="$APP/Contents/PlugIns/platforms/libqoffscreen.dylib"
 cp -L "$QT5/plugins/platforms/libqoffscreen.dylib" "$OFFSCREEN"; chmod u+w "$OFFSCREEN"
+install_name_tool -id "@executable_path/../PlugIns/platforms/libqoffscreen.dylib" "$OFFSCREEN" 2>/dev/null
 for dep in $(otool -L "$OFFSCREEN" | awk 'NR>1{print $1}' | grep '\.framework/' || true); do
     fwpath="${dep#@rpath/}"; fwpath="${fwpath##*/lib/}"
     install_name_tool -change "$dep" "@executable_path/../Frameworks/$fwpath" "$OFFSCREEN" 2>/dev/null
@@ -58,9 +59,12 @@ for pass in 1 2 3 4 5; do
     for f in "$FW"/*.dylib "$APP/Contents/MacOS/"* "$APP/Contents/PlugIns"/*/*.dylib; do
         for dep in $(otool -L "$f" | awk 'NR>1{print $1}' | grep -E '^(@loader_path|@rpath|/opt/homebrew|/usr/local)/' | grep -v '\.framework/' || true); do
             name="$(basename "$dep")"
+            # otool -L also lists a library's own install name
+            [ "$name" = "$(basename "$f")" ] && continue
             if [ ! -f "$FW/$name" ]; then
                 src="$BREWLIB/$name"
-                [ -f "$src" ] || src="$(find "$(brew --prefix)/opt" -name "$name" -print -quit)"
+                [ -f "$src" ] || src="$(find -L "$(brew --prefix)/opt/" -maxdepth 4 -name "$name" -print -quit)"
+                [ -n "$src" ] || { echo "error: $name (needed by $f) not found"; false; }
                 cp -L "$src" "$FW/$name"; chmod u+w "$FW/$name"
                 install_name_tool -id "@executable_path/../Frameworks/$name" "$FW/$name" 2>/dev/null
                 added=1
