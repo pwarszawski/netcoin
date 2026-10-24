@@ -47,7 +47,7 @@ OFFSCREEN="$APP/Contents/PlugIns/platforms/libqminimal.dylib"
 cp -L "$QT5/plugins/platforms/libqminimal.dylib" "$OFFSCREEN"; chmod u+w "$OFFSCREEN"
 install_name_tool -id "@executable_path/../PlugIns/platforms/libqminimal.dylib" "$OFFSCREEN" 2>/dev/null
 otool -L "$OFFSCREEN"
-for dep in $(otool -L "$OFFSCREEN" | awk 'NR>1{print $1}' | grep '\.framework/' || true); do
+for dep in $(otool -L "$OFFSCREEN" | awk 'NR>1{print $1}' | grep -E '^(@rpath|/opt/homebrew|/usr/local)/.*\.framework/' || true); do
     fwpath="${dep#@rpath/}"; fwpath="${fwpath##*/lib/}"
     install_name_tool -change "$dep" "@executable_path/../Frameworks/$fwpath" "$OFFSCREEN" 2>/dev/null
 done

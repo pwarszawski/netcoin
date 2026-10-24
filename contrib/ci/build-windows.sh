@@ -66,7 +66,7 @@ if [ "$STATIC" = 1 ]; then
         rm -rf "$ROOT/build-qrencode"
         git clone -q --depth 1 -b v4.1.1 https://github.com/fukuchi/libqrencode.git "$ROOT/build-qrencode" >>"$LOG" 2>&1
         (cd "$ROOT/build-qrencode" && cmake -G "MSYS Makefiles" -DBUILD_SHARED_LIBS=OFF -DWITH_TOOLS=OFF \
-            -DCMAKE_INSTALL_PREFIX="$MINGW_PREFIX" . && make -j"$JOBS" && make install) >>"$LOG" 2>&1
+            -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX="$MINGW_PREFIX" . && make -j"$JOBS" && make install) >>"$LOG" 2>&1
         [ -f "$MINGW_PREFIX/lib/libqrencode.a" ] || { echo "static libqrencode not built" | tee -a "$LOG"; false; }
     fi
 fi
