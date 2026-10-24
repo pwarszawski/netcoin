@@ -163,7 +163,7 @@ endif
 
 obj/miniz.o: miniz/miniz.c
 	@mkdir -p obj
-	$(CC) -c -O2 $(CFLAGS) -o $@ $^
+	$(CC) -c -O2 -D_LARGEFILE64_SOURCE $(CFLAGS) -o $@ $^
 
 obj/scrypt.o: scrypt.c
 	@mkdir -p obj

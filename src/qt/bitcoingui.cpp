@@ -40,6 +40,7 @@
 #include "allocators.h"
 #include "init.h"
 #include "stakereportdialoge.h"
+#include "snapshot.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -70,6 +71,8 @@
 #include <QDesktopServices>
 #include <QStandardPaths>
 #include <QRegularExpression>
+#include <QProcess>
+#include <QDir>
 #include <QTimer>
 #include <QDragEnterEvent>
 #if QT_VERSION < 0x050000
@@ -360,6 +363,8 @@ void BitcoinGUI::createActions()
     encryptWalletAction->setCheckable(true);
     backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Backup Wallet..."), this);
     backupWalletAction->setToolTip(tr("Backup wallet to another location"));
+    importSnapshotAction = new QAction(QIcon(":/icons/filesave"), tr("&Import block chain snapshot..."), this);
+    importSnapshotAction->setToolTip(tr("Load the block chain from a snapshot file instead of downloading it"));
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setToolTip(tr("Change the passphrase used for wallet encryption"));
     unlockWalletAction = new QAction(QIcon(":/icons/lock_open"), tr("&Unlock Wallet..."), this);
@@ -384,6 +389,7 @@ void BitcoinGUI::createActions()
     connect(toggleHideAction,        SIGNAL(triggered()), this, SLOT(toggleHidden()));
     connect(encryptWalletAction,     SIGNAL(triggered(bool)), this, SLOT(encryptWallet(bool)));
     connect(backupWalletAction,      SIGNAL(triggered()), this, SLOT(backupWallet()));
+    connect(importSnapshotAction,    SIGNAL(triggered()), this, SLOT(importSnapshot()));
     connect(changePassphraseAction,  SIGNAL(triggered()), this, SLOT(changePassphrase()));
     connect(unlockWalletAction,      SIGNAL(triggered()), this, SLOT(unlockWallet()));
     connect(lockWalletAction,        SIGNAL(triggered()), this, SLOT(lockWallet()));
@@ -428,6 +434,7 @@ void BitcoinGUI::createMenuBar()
     // Configure the menus
     QMenu *file = appMenuBar->addMenu(tr("&File"));
     file->addAction(backupWalletAction);
+    file->addAction(importSnapshotAction);
     file->addAction(exportAction);
     file->addAction(signMessageAction);
     file->addAction(verifyMessageAction);
@@ -1052,6 +1059,63 @@ void BitcoinGUI::backupWallet()
             QMessageBox::warning(this, tr("Backup Failed"), tr("There was an error trying to save the wallet data to the new location."));
         }
     }
+}
+
+void BitcoinGUI::importSnapshot()
+{
+    QString saveDir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
+    QString filename = QFileDialog::getOpenFileName(this, tr("Import block chain snapshot"), saveDir,
+                                                    tr("Block chain snapshot (*.zip)"));
+    if (filename.isEmpty())
+        return;
+#ifdef WIN32
+    boost::filesystem::path path(filename.toStdWString());
+#else
+    boost::filesystem::path path(filename.toStdString());
+#endif
+    SnapshotInfo info;
+    std::string strError;
+    if (!ReadSnapshotInfo(path, info, strError)) {
+        QMessageBox::critical(this, tr("Import block chain snapshot"), QString::fromStdString(strError));
+        return;
+    }
+
+    QString text = tr("Snapshot of the block chain up to block <b>%1</b><br>"
+                      "Block hash: <tt>%2</tt><br>Created: %3<br>Size after unpacking: %4 MB")
+                       .arg(info.nHeight)
+                       .arg(QString::fromStdString(info.hash.ToString()))
+                       .arg(QString::fromStdString(info.strCreated).toHtmlEscaped())
+                       .arg((qulonglong)(info.nDataSize / 1048576));
+    text += "<br><br>";
+    if (info.fKnown)
+        text += tr("This snapshot is on the list built into this version of NetCoin.");
+    else
+        text += "<b>" + tr("This snapshot is not on the list built into this version of NetCoin. "
+                           "Only import snapshots from a source you trust.") + "</b>";
+    if (nBestHeight >= info.nHeight)
+        text += "<br><br>" + tr("Your block chain already has %1 blocks, the snapshot does not make it longer.").arg(nBestHeight);
+    text += "<br><br>" + tr("NetCoin will restart and replace its block chain with the snapshot. "
+                            "The current block chain is moved to a chain-backup folder in the data directory "
+                            "(you can delete it afterwards). The wallet is not changed.") +
+            "<br><br>" + tr("Continue?");
+    if (QMessageBox::question(this, tr("Import block chain snapshot"), text,
+                              QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel) != QMessageBox::Yes)
+        return;
+
+    // restart with -loadsnapshot (the new process waits until this one has
+    // released the data directory)
+    QStringList args = QCoreApplication::arguments();
+    args.removeFirst();
+    for (int i = args.size() - 1; i >= 0; i--)
+        if (args[i].startsWith("-loadsnapshot") || args[i].startsWith("--loadsnapshot"))
+            args.removeAt(i);
+    args << ("-loadsnapshot=" + QDir::toNativeSeparators(filename));
+    if (!QProcess::startDetached(QCoreApplication::applicationFilePath(), args)) {
+        QMessageBox::critical(this, tr("Import block chain snapshot"),
+                              tr("NetCoin could not be restarted. Start it with -loadsnapshot=%1").arg(filename));
+        return;
+    }
+    qApp->quit();
 }
 
 void BitcoinGUI::changePassphrase()

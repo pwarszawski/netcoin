@@ -99,6 +99,7 @@ private:
     QAction *exportAction;
     QAction *encryptWalletAction;
     QAction *backupWalletAction;
+    QAction *importSnapshotAction;
     QAction *changePassphraseAction;
     QAction *unlockWalletAction;
     QAction *lockWalletAction;
@@ -210,6 +211,8 @@ private slots:
     void encryptWallet(bool status);
     /** Backup the wallet */
     void backupWallet();
+    /** Replace the block chain with a snapshot (.zip) and restart */
+    void importSnapshot();
     /** Change encrypted wallet passphrase */
     void changePassphrase();
     /** Ask for passphrase to unlock wallet temporarily */

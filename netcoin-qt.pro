@@ -548,3 +548,6 @@ win32:contains(MSYS2, 1):contains(STATIC, 1) {
     QMAKE_LIBS += $$QT_EXTRA_LIBS
     LIBS += $$LEVELDB_EXTRA_LIBS -lcrypt32 -lbcrypt -lz
 }
+
+# miniz: 64-bit file offsets on Linux (snapshots are larger than 2 GB)
+unix:!macx: QMAKE_CFLAGS += -D_LARGEFILE64_SOURCE
