@@ -76,6 +76,14 @@ re-validated the complete main chain, from the genesis block up to block
   (simplified). Earlier versions contained translation files but never
   included them, so the wallet was English only. Select the language in
   Options > Display.
+* Themes are back: the original NetCoin look (dark background, orange
+  text) and the other themes in the Themes menu are now built into the
+  program. Earlier packages did not include the theme files, so the
+  wallet showed plain system widgets. A `themes` folder next to the
+  program or in the data directory still overrides them (see
+  `src/qt/themes/custom` for a template).
+* Qt 6. Transactions show Unconfirmed / Confirming (n/6) again instead
+  of Confirmed right away.
 
 ## Performance
 

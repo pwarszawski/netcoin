@@ -36,12 +36,12 @@
 
 /* Window */
  QMainWindow {
-	border-image: url($themes-dir/world/world.png);
+	border-image: url($themes-dir/world/world.jpg);
 }
 
 /* Dialog */
 QDialog, QTableView{
-	border-image: url($themes-dir/world/black.png);
+	border-image: url($themes-dir/world/black.jpg);
      font-size: 14px
 }
 
@@ -199,6 +199,15 @@ QPlainTextEdit:focus, QLineEdit:focus {
 QPlainTextEdit:disabled, QLineEdit:disabled {
 	border-color: $main-color-xd;
 	color: $input-border-color;
+}
+
+/* List widgets (e.g. the node list in Options) */
+QListWidget {
+	background-color: $main-color;
+	color: $text-color;
+	selection-color: $main-color;
+	selection-background-color: $text-color;
+	border: 1px solid $input-border-color;
 }
 
 /* Text edit - debug window */

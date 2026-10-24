@@ -30,6 +30,10 @@
 #include "askpassphrasedialog.h"
 #include "notificator.h"
 #include "guiutil.h"
+#include "util.h"
+
+#include <QDir>
+#include <QFile>
 #include "rpcconsole.h"
 #include "wallet.h"
 #include "bitcoinrpc.h"
@@ -1229,6 +1233,15 @@ void BitcoinGUI::loadTheme(QString theme)
     // template variables : key => value
     QMap<QString, QString> variables;
 
+    // theme names are not case sensitive (the default theme is stored as
+    // "Default" but its folder is "default")
+    foreach (const QString& t, themesList) {
+        if (t.compare(theme, Qt::CaseInsensitive) == 0) {
+            theme = t;
+            break;
+        }
+    }
+
     // path to selected theme dir - for simpler use, just use $theme-dir in qss : url($theme-dir/image.png)
     QString themeDir = themesDir + "/" + theme;
 
@@ -1307,28 +1320,34 @@ void BitcoinGUI::loadTheme(QString theme)
 
 void BitcoinGUI::listThemes(QStringList& themes)
 {
-    QDir currentDir(qApp->applicationDirPath());
-    // try app dir
-    if (currentDir.cd("themes")) {
-    // got it! (win package)
-    } else if (currentDir.cd("src/qt/res/themes")) {
-        // got it
-    } else if (currentDir.cd("../src/qt/res/themes")) {
-        // got it
-    } else {
-        // themes not found :(
-        return;
-    }
-    themesDir = currentDir.path();
-    currentDir.setFilter(QDir::Dirs);
-    QStringList entries = currentDir.entryList();
-    for( QStringList::ConstIterator entry=entries.begin(); entry!=entries.end(); ++entry )
-    {
-        QString themeName=*entry;
-        if(themeName != tr(".") && themeName != tr(".."))
-        {
-            themes.append(themeName);
+    // The themes are built into the program (themes.qrc). A "themes" folder
+    // next to the program or in the data directory replaces them, so that
+    // themes can be changed or added without rebuilding.
+    QStringList candidates;
+    candidates << QDir(qApp->applicationDirPath()).filePath("themes")
+               << QString::fromStdString((GetDataDir(false) / "themes").string())
+               << ":/themes";
+    QDir currentDir;
+    bool found = false;
+    foreach (const QString& dir, candidates) {
+        if (QDir(dir).exists() && !QDir(dir).entryList(QDir::Dirs | QDir::NoDotAndDotDot).isEmpty()) {
+            currentDir = QDir(dir);
+            found = true;
+            break;
         }
+    }
+    if (!found)
+        return;
+    themesDir = currentDir.path();
+    QStringList entries = currentDir.entryList(QDir::Dirs | QDir::NoDotAndDotDot, QDir::Name | QDir::IgnoreCase);
+    foreach (const QString& themeName, entries) {
+        if (!QFile::exists(currentDir.filePath(themeName + "/styles.qss")))
+            continue;
+        // the default theme first
+        if (themeName.compare("default", Qt::CaseInsensitive) == 0)
+            themes.prepend(themeName);
+        else
+            themes.append(themeName);
     }
 
     // get selected theme from registry (if any)

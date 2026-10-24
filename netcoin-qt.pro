@@ -409,7 +409,8 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/shoppingpage.cpp \
  src/qt/stakereportdialoge.cpp
 RESOURCES += \
-    src/qt/bitcoin.qrc
+    src/qt/bitcoin.qrc \
+    src/qt/themes.qrc
 
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
